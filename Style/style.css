@@ -1,0 +1,201 @@
+/* HORIZONTAL */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  text-transform: uppercase;
+}
+#pinContainer {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  -webkit-perspective: 1000;
+  perspective: 1000;
+}
+#slideContainer {
+  width: 400%;
+  height: 100vh;
+}
+.panel {
+  height: 100vh;
+  width: 25%;
+  float: left;
+  text-align: center;
+}
+.one {
+  background-image: url(../Images/Pimagic-super-photo.png);
+  color: white;
+  h1 {
+    margin-top: 150px;
+    display: inline-block;
+  }
+  button {
+    display: block;
+    margin: 0 auto;
+  }
+}
+.two {
+  background-image: url(../Images/photo-parquet-1385906112.jpg);
+  color: white;
+  h1 {
+    padding-top: 100px;
+    display: inline-block;
+  }
+}
+.three {
+  background-image: url(../Images/photo-parquet-1385906112.jpg);
+  color: white;
+}
+.four {
+  background-image: url(../Images/photo-parquet-1385906112.jpg);
+  color: #FFF;
+}
+@import "compass/css3";
+
+/*************** VERTICAL ***********************/
+
+html,
+body {
+  margin: 0;
+  height: 100%
+}
+
+h1,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+}
+
+section,
+section > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #EFEFEF;
+}
+
+.full-screen {
+  height: 100%;
+}
+
+#logo{
+	width: 100%;
+}
+.blue {
+color:black;
+}
+.red {
+	background-image: url(../Images/Pimagic-super-photo.png);
+}
+
+
+/********* PANORAMA *****************/
+
+.panorama-viewport {
+	position: relative;
+	width: 600px;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	text-align: left;
+}
+.panorama-container {
+	position: relative;
+	width: 100000px;
+	margin: 0;
+	padding: 0;
+
+}
+.panorama-control {
+	position: absolute;
+	display: none;
+	padding: 0;
+	margin: 0;
+	bottom: -1px;
+	left: 0;
+	width: 100%;
+	height: 30px;
+	background: black;
+	filter: alpha(opacity=50);
+	opacity: .5;
+	text-align: left;
+}
+.panorama-control-left, .panorama-control-right, .panorama-control-pause { 
+	float: left;
+	padding: 0;
+	margin: 0;
+	color: white;
+	text-decoration: none;
+	font-size: 20px;
+	line-height: 30px;
+	width: 33%;
+	text-align: center;
+	font-family: 'Arial',sans-serif
+}
+.panorama-control-left:hover, .panorama-control-right:hover, .panorama-control-pause:hover { 
+	text-decoration: none;
+}
+.panorama-control-pause {
+	text-transform: uppercase;
+}
+.panorama-panel {
+	position: absolute;
+	display: none;
+	top: 0;
+	right: 0;
+	background: #009cff;
+	filter: alpha(opacity=50);
+	opacity: .5;
+	color: white;
+	padding: 4px;
+}
+.panorama-panel h2 {
+	font-size: 11px;
+	text-transform: uppercase;
+	font-family: Arial, sans-serif;
+	text-align: right;
+}
+.panorama-panel ul {
+	display: none;
+}
+.panorama {
+	position: relative;
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+/************** FADE IN ****************/
+
+#villa{
+	display: none;
+	opacity: 1;
+}
+#villa2{
+	display: none;
+}
+
+/************ OPACITY ON SCROLL ***********/
+
+.img-src {
+    position: fixed;
+    background-position: center;
+    -webkit-background-size: cover;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+	background-image: url(../Images/intro.png);
+}
+
+.blurred-img { opacity: 0;
+background-image: url(../Images/Pimagic-super-photo.png);
+}
+
