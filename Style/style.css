@@ -1,102 +1,123 @@
 /* HORIZONTAL */
+
 body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  text-transform: uppercase;
+	margin: 0;
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
 }
+
 #pinContainer {
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-  -webkit-perspective: 1000;
-  perspective: 1000;
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+	-webkit-perspective: 1000;
+	perspective: 1000;
 }
+
 #slideContainer {
-  width: 400%;
-  height: 100vh;
+	width: 400%;
+	height: 100vh;
 }
+
 .panel {
-  height: 100vh;
-  width: 25%;
-  float: left;
-  text-align: center;
+	height: 100vh;
+	width: 25%;
+	float: left;
+	text-align: center;
 }
+
 .one {
-  background-image: url(../Images/Pimagic-super-photo.png);
-  color: white;
-  h1 {
-    margin-top: 150px;
-    display: inline-block;
-  }
-  button {
-    display: block;
-    margin: 0 auto;
-  }
+	background-image: url(../Images/mtg3.png);
+	color: white;
+	background-size: cover;
+	background-repeat: no-repeat;
+	border-right: 10px solid white;
+}
+
+h1 {
+	margin-top: 150px;
+	display: inline-block;
+}
+
+button {
+	display: block;
+	margin: 0 auto;
+}
+
+
 }
 .two {
-  background-image: url(../Images/photo-parquet-1385906112.jpg);
-  color: white;
-  h1 {
-    padding-top: 100px;
-    display: inline-block;
-  }
+	background-image: url(../Images/photo-parquet-1385906112.jpg);
+	color: white;
+    height: 100vh;
+	width: 45%;
+	float: left;
+	text-align: center;
+	h1 {
+		padding-top: 100px;
+		display: inline-block;
+        position: absolute;
+	}
 }
 .three {
-  background-image: url(../Images/photo-parquet-1385906112.jpg);
-  color: white;
+	background-image: url(../Images/photo-parquet-1385906112.jpg);
+	color: white;
 }
 .four {
-  background-image: url(../Images/photo-parquet-1385906112.jpg);
-  color: #FFF;
+	background-image: url(../Images/photo-parquet-1385906112.jpg);
+	color: #FFF;
 }
 @import "compass/css3";
 
-/*************** VERTICAL ***********************/
+#meubles{
+    height: 100%;
+    float: left;
+    position: relative;
+}
 
+/*************** VERTICAL ***********************/
 html,
 body {
-  margin: 0;
-  height: 100%
+	margin: 0;
+	height: 100%
 }
-
 h1,
 p {
-  margin: 0;
-  padding: 0;
+	margin: 0;
+	padding: 0;
 }
-
 header {
-  position: fixed;
-  top: 10px;
-  left: 10px;
+	position: fixed;
+	top: 10px;
+	left: 10px;
 }
-
 section,
 section > div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: #EFEFEF;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	color: #EFEFEF;
 }
-
 .full-screen {
-  height: 100%;
+	height: 100%;
 }
-
-#logo{
+#logo {
 	width: 100%;
 }
 .blue {
-color:black;
+	color: black;
+	border-bottom: 10px solid white;
 }
 .red {
 	background-image: url(../Images/Pimagic-super-photo.png);
 }
-
+.green {
+	background-image: url(../Images/saloun.jpg);
+	background-size: cover
+}
 
 /********* PANORAMA *****************/
-
 .panorama-viewport {
 	position: relative;
 	width: 600px;
@@ -110,7 +131,6 @@ color:black;
 	width: 100000px;
 	margin: 0;
 	padding: 0;
-
 }
 .panorama-control {
 	position: absolute;
@@ -126,7 +146,9 @@ color:black;
 	opacity: .5;
 	text-align: left;
 }
-.panorama-control-left, .panorama-control-right, .panorama-control-pause { 
+.panorama-control-left,
+.panorama-control-right,
+.panorama-control-pause {
 	float: left;
 	padding: 0;
 	margin: 0;
@@ -136,9 +158,11 @@ color:black;
 	line-height: 30px;
 	width: 33%;
 	text-align: center;
-	font-family: 'Arial',sans-serif
+	font-family: 'Arial', sans-serif
 }
-.panorama-control-left:hover, .panorama-control-right:hover, .panorama-control-pause:hover { 
+.panorama-control-left:hover,
+.panorama-control-right:hover,
+.panorama-control-pause:hover {
 	text-decoration: none;
 }
 .panorama-control-pause {
@@ -172,30 +196,43 @@ color:black;
 }
 
 /************** FADE IN ****************/
-
-#villa{
+#villa {
 	display: none;
 	opacity: 1;
 }
-#villa2{
+#villa2 {
 	display: none;
 }
 
-/************ OPACITY ON SCROLL ***********/
-
+/************ BLUR ON SCROLL ***********/
 .img-src {
-    position: fixed;
-    background-position: center;
-    -webkit-background-size: cover;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: -1;
-	background-image: url(../Images/intro.png);
+	position: fixed;
+	background-position: center;
+	-webkit-background-size: cover;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: -1;
+	background-image: url(../Images/saloun.jpg);
+}
+.blurred-img {
+	opacity: 0;
+	background-image: url(../Images/blur.jpeg);
 }
 
-.blurred-img { opacity: 0;
-background-image: url(../Images/Pimagic-super-photo.png);
+.img-src-suit {
+	position: fixed;
+	background-position: center;
+	-webkit-background-size: cover;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: -1;
+	background-image: url(../Images/mtg3.png);
 }
-
+.blurred-img-suit {
+	opacity: 0;
+	background-image: url(../Images/blur.jpeg);
+}

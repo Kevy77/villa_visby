@@ -85,7 +85,9 @@ $(window).scroll(function(){
     $("#villa").css("opacity", 1 - $(window).scrollTop() / 250);
   });
 
+/************* FADE IN ********************/
 
+/************* BLUR ON SCROLL ********************/
 $(window).scroll(function() {
     // Get scroll position
     var s = $(window).scrollTop(),
@@ -94,3 +96,13 @@ $(window).scroll(function() {
     // opacity value 0% to 100%
     $('.blurred-img').css('opacity', opacityVal);
 });
+
+$(window).scroll(function() {
+    // Get scroll position
+    var suit = $(window).scrollTop(),
+    // scroll value and opacity
+    opacityVal = (suit / 150.0);
+    // opacity value 0% to 100%
+    $('.blurred-img-suit').css('opacity', opacityVal);
+});
+/************* BLUR ON SCROLL ********************/
