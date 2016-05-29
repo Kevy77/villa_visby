@@ -5,7 +5,7 @@ body{
     border: 0px;
     border-radius: 0px;
     background-color: transparent;
-    padding: 0px 150px;
+    margin: 0px 20px;
 }
 .panel-two{
 
@@ -261,7 +261,9 @@ body {
 .one {
     background-size: cover;
     background-repeat: no-repeat;
+    border-right: 2px dashed white;
 }
+
 
 h1 {
     margin-top: 150px;
