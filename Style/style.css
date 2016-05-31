@@ -20,6 +20,36 @@ body{
 }
 /* HOME */
 
+.menu{
+  display: none;
+  position: relative;
+  z-index: 999;
+}
+.menu__nav{
+  background: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  height: auto;
+  width: 100%;
+  top: 60px;
+  border-top: 1px #000000 solid;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+.menu__nav li{
+  display: inline-block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 25px;
+}
+.menu__nav li a{
+  color: #ffffff;
+  text-transform: capitalize;
+  font-family: "Museo", sans-serif;
+}
+.hamburger-inner, .hamburger-inner:before, .hamburger-inner:after{
+  background-color: #fff;
+}
 .navbar{
     height: 60px;
     background: rgba(0, 0, 0, 0.6);
@@ -48,24 +78,14 @@ body{
     margin-right: 50%;
 }
 .header__icon {
-    position: relative;
-    display: block;
-    float: right;
-    width: 80px;
-    height: 150px;
-    cursor: pointer;
+  position: relative;
+  display: block;
+  float: right;
+  width: 80px;
+  height: 100%;
+  cursor: pointer;
+  outline: none;
 }
-.header__icon:after {
-    content: '';
-    position: absolute;
-    display: block;
-    width: 4rem;
-    height: 0;
-    top: 9px;
-    right: 16px;
-    -moz-box-shadow: 0 10px 0 1px white, 0 20px 0 1px white, 0 30px 0 1px white;
-    -webkit-box-shadow: 0 10px 0 1px white, 0 20px 0 1px white, 0 30px 0 1px white;
-    box-shadow: 0 10px 0 1px white, 0 20px 0 1px white, 0 30px 0 1px white; }
 
 #banner__villa1{
     height: 195px;

@@ -16,93 +16,97 @@ var controller = new ScrollMagic.Controller();
 
 // Définit le mouvement des panels
 var wipeAnimation = new TimelineMax()
-	.to("#slideContainer", 1, {
-		x: "-75%"
-	})
+.to("#slideContainer", 1, {
+  x: "-75%"
+})
 
 // creation d'une action 
 new ScrollMagic.Scene({
-		triggerElement: "#pinContainer",
-		triggerHook: "onLeave",
-		duration: "500%"
-	})
-	.setPin("#pinContainer")
-	.setTween(wipeAnimation)
-	.addIndicators()
-	.addTo(controller);
+  triggerElement: "#pinContainer",
+  triggerHook: "onLeave",
+  duration: "500%"
+})
+  .setPin("#pinContainer")
+  .setTween(wipeAnimation)
+  .addIndicators()
+  .addTo(controller);
 
 
 /*********** HORIZONTAL ******************/
 
 /**************** PANORAMA ***************/
 var
-        $target  = $(".panorama").first(),
-        currentPosition = 0,
-        moveBy = function(scrolledBy){
-            currentPosition += scrolledBy;
-            $target.css("transform", "translateX(" + (currentPosition) + "px)")
-        },
-        lastScrollTop = 0 ;
+$target  = $(".panorama").first(),
+    currentPosition = 0,
+    moveBy = function(scrolledBy){
+      currentPosition += scrolledBy;
+      $target.css("transform", "translateX(" + (currentPosition) + "px)")
+    },
+    lastScrollTop = 0 ;
 
-    $(window).bind("scroll",function(e){
-        var scrolledBy = $(window).scrollTop() - lastScrollTop;
-        moveBy(-scrolledBy);
-        lastScrollTop = $(window).scrollTop();
-    });
+$(window).bind("scroll",function(e){
+  var scrolledBy = $(window).scrollTop() - lastScrollTop;
+  moveBy(-scrolledBy);
+  lastScrollTop = $(window).scrollTop();
+});
 
-    $(document).ready(function(){
-        var image = $(".panorama > img"),
-            $target  = $(".panorama").first();
-        image.load(function(){
-            var panorama = $(".panorama"),
-                    updateHtml = "";
-            var imageSrc = image.attr("src");
-            var imagesNeededToFillDocument = $(document).height() / image.width();
-            for(var i =0; i < imagesNeededToFillDocument; i ++){
-                updateHtml += "<img src='"+imageSrc+"'>";
-            }
-            panorama.append(updateHtml);
-            $(".loader").first().hide();
-        });
-    });
+$(document).ready(function(){
+  var image = $(".panorama > img"),
+      $target  = $(".panorama").first();
+  image.load(function(){
+    var panorama = $(".panorama"),
+        updateHtml = "";
+    var imageSrc = image.attr("src");
+    var imagesNeededToFillDocument = $(document).height() / image.width();
+    for(var i =0; i < imagesNeededToFillDocument; i ++){
+      updateHtml += "<img src='"+imageSrc+"'>";
+    }
+    panorama.append(updateHtml);
+    $(".loader").first().hide();
+  });
+});
 
 /**************** PANORAMA ***************/
 
 /*************** FADE IN *****************/
 
 $(document).ready(function(){	
-	$('#villa').fadeIn(2000);
+  $('#villa').fadeIn(2000);
 });
 
 $(document).ready(function(){	
-	$('#villa2').fadeIn(2100);
+  $('#villa2').fadeIn(2100);
+  $(".hamburger").on("click",function(){
+    $(".menu").slideToggle();
+    $(".hamburger").toggleClass("is-active");
+  });
 });
 
 /************* FADE IN ********************/
 
 
 $(window).scroll(function(){
-    $("#villa").css("opacity", 1 - $(window).scrollTop() / 250);
-  });
+  $("#villa").css("opacity", 1 - $(window).scrollTop() / 250);
+});
 
 /************* FADE IN ********************/
 
 /************* BLUR ON SCROLL ********************/
 $(window).scroll(function() {
-    // Get scroll position
-    var s = $(window).scrollTop(),
-    // scroll value and opacity
-    opacityVal = (s / 150.0);
-    // opacity value 0% to 100%
-    $('.blurred-img').css('opacity', opacityVal);
+  // Get scroll position
+  var s = $(window).scrollTop(),
+      // scroll value and opacity
+      opacityVal = (s / 150.0);
+  // opacity value 0% to 100%
+  $('.blurred-img').css('opacity', opacityVal);
 });
 
 $(window).scroll(function() {
-    // Get scroll position
-    var suit = $(window).scrollTop(),
-    // scroll value and opacity
-    opacityVal = (suit / 150.0);
-    // opacity value 0% to 100%
-    $('.blurred-img-suit').css('opacity', opacityVal);
+  // Get scroll position
+  var suit = $(window).scrollTop(),
+      // scroll value and opacity
+      opacityVal = (suit / 150.0);
+  // opacity value 0% to 100%
+  $('.blurred-img-suit').css('opacity', opacityVal);
 });
 /************* BLUR ON SCROLL ********************/
