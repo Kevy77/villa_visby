@@ -106,7 +106,6 @@ $(window).scroll(function(){
 $(document).ready(function(){
   width = $(window).width();
   $(".one").css({'width': width});
-  $(".four").css({'width': width});
 });
 /************* BLUR ON SCROLL ********************/
 $(window).scroll(function() {
