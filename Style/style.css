@@ -482,7 +482,6 @@ button {
     color: white;
 }
 .four {
-    border-right: 2px dashed white;
 }
 @import "compass/css3";
 
