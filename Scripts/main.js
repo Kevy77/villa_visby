@@ -20,7 +20,7 @@ var wipeAnimation = new TimelineMax()
   x: "-75%"
 })
 
-// creation d'une action 
+// creation d'une action
 new ScrollMagic.Scene({
   triggerElement: "#pinContainer",
   triggerHook: "onLeave",
@@ -68,16 +68,30 @@ $(document).ready(function(){
 
 /*************** FADE IN *****************/
 
-$(document).ready(function(){	
+$(document).ready(function(){
   $('#villa').fadeIn(2000);
 });
 
-$(document).ready(function(){	
+$(document).ready(function(){
   $('#villa2').fadeIn(2100);
   $(".hamburger").on("click",function(){
     $(".menu").slideToggle();
     $(".hamburger").toggleClass("is-active");
   });
+  $(document).ready(function(){
+      $("#content-2").hide();
+    });
+    $('.btn__click').click(function(e){
+        e.preventDefault();
+        $("#content-2").show();
+        $("#content-1").hide();
+    });
+    $('.btn__click_cross').click(function(e){
+        e.preventDefault();
+        $("#content-2").hide();
+        $("#content-1").show();
+    });
+
 });
 
 /************* FADE IN ********************/
@@ -87,8 +101,12 @@ $(window).scroll(function(){
   $("#villa").css("opacity", 1 - $(window).scrollTop() / 250);
 });
 
-/************* FADE IN ********************/
+/************* RESOLUTION ********************/
 
+$(document).ready(function(){
+  width = $(window).width();
+  $(".one").css({'width': width});
+});
 /************* BLUR ON SCROLL ********************/
 $(window).scroll(function() {
   // Get scroll position

@@ -1,6 +1,9 @@
 body{
     overflow-x: hidden;
 }
+#content-1{
+  height: 100vh;
+}
 .panel{
     border: 0px;
     border-radius: 0px;
@@ -18,6 +21,87 @@ body{
     padding-right:0;
     padding-left:0;
 }
+/* Catalogue */
+.catalogue{
+  background: #f5eeee;
+  height: 100%;
+  width: 100%;
+
+}
+.menu_nav li{
+  color: black;
+  float: right;
+  list-style: none;
+}
+ul img{
+  display: inline-table;
+  margin: 20px;
+}
+.result,.result__2{
+    margin-bottom: 10px;
+    padding: 30px;
+}
+ul p{
+  color: #a8857c;
+  font-family: 'Museo', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+}
+.boxy-box{
+  background-color: white;
+  border: 3px solid #a8857c;
+  margin-top: 30px;
+}
+.img__result{
+  margin-top: 30px;
+}
+.title_product__c{
+  color: black;
+  font-family: 'Museo',sans-serif;
+  font-weight: 300;
+  text-align: center;
+  font-size: 22px;
+}
+.description_product__c,.coloris_product__c{
+  color: black;
+  font-family: 'Museo',sans-serif;
+  font-weight: 300;
+  text-align: left;
+  font-size: 15px;
+  text-transform: capitalize;
+  margin: 10px;
+}
+.grey_block,.black_block,.brown_block,.brown__block{
+  margin: 10px;
+}
+.grey_block{
+    width: 30px;
+    height: 30px;
+    background: #777a7e;
+    float:left;
+
+}
+.black_block{
+    width: 30px;
+    height: 30px;
+    background: black;
+    float:left;
+
+}
+.brown_block{
+    width: 30px;
+    height: 30px;
+    background: #ad8e81;
+    float:left;
+}
+.brown__block{
+    width: 30px;
+    height: 30px;
+    background: #e0cebe;
+    float:left;
+
+}
+
 /* HOME */
 
 .menu{
@@ -89,7 +173,7 @@ body{
 
 #banner__villa1{
     height: 195px;
-    background-color: rgba(181, 148, 129, 0.6); 
+    background-color: rgba(181, 148, 129, 0.6);
 
 }
 hr{
@@ -173,7 +257,7 @@ a:hover,a:visited{
     float: left;
 }
 .color_2{
-    background-color: #c6b19a; 
+    background-color: #c6b19a;
 }
 .before_container{
     width: 100%;
@@ -210,14 +294,6 @@ a:hover,a:visited{
     color: white;
     background: rgba(255,255,255,0.6);
 
-}
-.catalogue{
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    overflow-x:hidden ;
-    z-index: 99;
-    background: whitesmoke;
 }
 .line-minus{
     margin-top: 30px;
@@ -316,6 +392,12 @@ h1.design__3{
     color: white;
     border: 15px solid rgba(181, 148, 129, 0.6);
     padding: 10px;
+    margin-top: 100px;
+}
+h1.design__4{
+    font-family: 'Museo', sans-serif;
+    font-size: 36px;
+    color: black;
     margin-top: 100px;
 }
 h1.design__2{
