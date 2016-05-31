@@ -183,6 +183,7 @@ a:hover,a:visited{
     border-radius: 50%;
     display: block;
     margin: 0 auto;
+    margin-top: 100px;
     z-index: 0;
     margin-top: 70px;
     padding: 25px;
@@ -190,26 +191,37 @@ a:hover,a:visited{
     background: rgba(255,255,255,0.6);
 
 }
+.catalogue{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    overflow-x:hidden ;
+    z-index: 99;
+    background: whitesmoke;
+}
 .line-minus{
-    margin-top: -160px;
+    margin-top: 30px;
+    margin-bottom: 60px;
 }
 .cam_container{
     position: relative;
 }
 .cam_container img{
     position: relative;
-    left: -540px;
     animation-name: camion;
-    animation-duration: 5s;
+    animation-duration: 10s;
     animation-iteration-count: infinite;
     background-repeat: no-repeat;
 }
 @keyframes camion {
     0% {
-        left: 0x;
+        left: -380px;
+    }
+     50% {
+        left: 0px;
     }
     100% {
-        left: 540px;
+        left: 380px;
     }
 }
 
