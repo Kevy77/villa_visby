@@ -17,7 +17,7 @@ var controller = new ScrollMagic.Controller();
 // Définit le mouvement des panels
 var wipeAnimation = new TimelineMax()
 .to("#slideContainer", 1, {
-  x: "-65%"
+  x: "-75%"
 })
 
 // creation d'une action
@@ -36,7 +36,7 @@ new ScrollMagic.Scene({
 res = [];
 $(window).scroll(function() {
   var left = document.body.scrollTop;
-  var left = (left - 3000 +'px');
+  var left = (left - 2500 +'px');
   $(".cam_container img").css({'left': left});
   /*res = [];
   var currentScroll = left;
