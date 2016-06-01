@@ -263,7 +263,7 @@ a:hover,a:visited{
     max-width: 400px;
     float: left;
     position: relative;
-    z-index: 3;
+    z-index: 20;
 }
 .color_2{
     background-color: #c6b19a;
@@ -314,7 +314,7 @@ a:hover,a:visited{
 .cam_container img{
     position: absolute;
     left:0;
-    z-index: 20;
+    z-index: 3;
 }
 @keyframes camion {
     0% {
