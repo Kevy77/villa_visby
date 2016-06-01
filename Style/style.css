@@ -262,6 +262,8 @@ a:hover,a:visited{
     padding: 80px 20px;
     max-width: 400px;
     float: left;
+    position: relative;
+    z-index: 3;
 }
 .color_2{
     background-color: #c6b19a;
@@ -312,6 +314,7 @@ a:hover,a:visited{
 .cam_container img{
     position: absolute;
     left:0;
+    z-index: 20;
 }
 @keyframes camion {
     0% {
@@ -486,7 +489,6 @@ button {
     color: white;
 }
 .four {
-  overflow: hidden;
 }
 @import "compass/css3";
 
