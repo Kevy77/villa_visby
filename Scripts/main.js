@@ -26,12 +26,26 @@ new ScrollMagic.Scene({
   triggerHook: "onLeave",
   duration: "500%"
 })
+/************* SCROLL VOITURE ********************/
   .setPin("#pinContainer")
   .setTween(wipeAnimation)
   .addTo(controller);
 
 /*********** HORIZONTAL ******************/
-
+$(window).scroll(function() {
+  var left = document.body.scrollTop;
+  var left = (left - 2500 +'px');
+  $(".cam_container img").css({'left': left});
+  /*res = [];
+  var currentScroll = left;
+  var lastScroll;
+  if (currentScroll < lastScroll) {
+    alert('fumé');
+  }
+  tab.push(left);
+  res.push(left);// Inscrit le resultat dans un tableau
+  console.log(res);*/
+});
 /**************** PANORAMA ***************/
 var
 $target  = $(".panorama").first(),
@@ -100,6 +114,7 @@ $(document).ready(function(){
 $(window).scroll(function(){
   $("#villa").css("opacity", 1 - $(window).scrollTop() / 250);
 });
+
 
 /************* RESOLUTION ********************/
 
