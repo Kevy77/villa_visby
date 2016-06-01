@@ -92,58 +92,58 @@ $(document).ready(function(){
 });
 
 /**************** PANORAMA ***************/
-  $('.after_effects').hide()
 $(window).scroll(function(){
     var effect = document.body.scrollTop;
     console.log(effect);
     if(effect > 1200){
-      $("#container_2").show();
+      $("#container_2").removeClass('view_2').addClass('view_1');
     }
     else{
 
     }
     if(effect > 1600){
-      $("#container_3").show();
+      $("#container_3").removeClass('view_2').addClass('view_1');
     }
     else{
 
     }
     if(effect > 1800){
-      $("#container_4").show();
+      $("#container_4").removeClass('view_2').addClass('view_1');
     }
     else{
 
     }
     if(effect > 2200){
-      $("#container_5").show();
+      $("#container_5").removeClass('view_2').addClass('view_1');
     }
     else{
 
     }
     if(effect < 1200){
-      $("#container_2").hide().addClass('transition-1');
+      $("#container_2").removeClass('view_1').addClass('view_2');
     }
     else{
 
-    }
+
     if(effect < 1600){
-      $("#container_3").hide().addClass('transition-1');
+      $("#container_3").removeClass('view_1').addClass('view_2');
     }
     else{
 
     }
     if(effect < 1800){
-      $("#container_4").hide().addClass('transition-1');
+      $("#container_4").removeClass('view_1').addClass('view_2');
     }
     else{
 
     }
     if(effect < 2200){
-      $("#container_5").hide().addClass('transition-1');
+      $("#container_5").removeClass('view_1').addClass('view_2');
     }
     else{
 
     }
+  }
 });
 
 /*************** FADE IN *****************/

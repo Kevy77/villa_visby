@@ -262,7 +262,32 @@ a:hover,a:visited{
     max-width: 400px;
     float: left;
     overflow: hidden;
+    position: relative;
 }
+#container_1{
+  z-index: 14
+}
+#container_2{
+  z-index: 13
+}
+#container_3{
+  z-index: 12
+}
+#container_4{
+  z-index: 11
+}
+#container_5{
+  z-index: 10
+}
+.view_2{
+  margin-left: -400px;
+  transition:1s margin-left,1s width,1s opacity;
+}
+.view_1{
+  margin-left:0px !important;
+  transition:1s margin-left,1s width,1s opacity;
+}
+
 .color_2{
     background-color: #c6b19a;
 }
