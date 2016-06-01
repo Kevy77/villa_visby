@@ -32,6 +32,8 @@ new ScrollMagic.Scene({
   .addTo(controller);
 
 /*********** HORIZONTAL ******************/
+
+res = [];
 $(window).scroll(function() {
   var left = document.body.scrollTop;
   var left = (left - 2500 +'px');
@@ -45,6 +47,16 @@ $(window).scroll(function() {
   tab.push(left);
   res.push(left);// Inscrit le resultat dans un tableau
   console.log(res);*/
+  var currentScrolling = left;
+  res[res.length]= currentScrolling;
+  if(res[res.length-2]>res[res.length-1]){
+    $("#camion").attr("href", "Images/camion_recul.png");
+    console.log("En train d'avancer");
+  }
+  else{
+    $("#camion").attr("href", "Images/camion.png");
+    console.log("En train de reculer");
+  }
 });
 /**************** PANORAMA ***************/
 var
