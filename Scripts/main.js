@@ -158,18 +158,19 @@ $(document).ready(function(){
     $(".menu").slideToggle();
     $(".hamburger").toggleClass("is-active");
   });
+    $("#content-2").hide();
   $(document).ready(function(){
-      $("#content-2").hide();
     });
     $('.btn__click').click(function(e){
         e.preventDefault();
-        $("#content-2").show();
+        $("#content-2").slideDown( 300);
         $("#content-1").hide();
     });
     $('.btn__click_cross').click(function(e){
         e.preventDefault();
-        $("#content-2").hide();
-        $("#content-1").show();
+        $("#content-2").slideUp( 300 );
+        $("#content-1").show( 1000 );
+
     });
 
 });
