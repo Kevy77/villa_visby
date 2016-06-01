@@ -50,14 +50,15 @@ $(window).scroll(function() {
   var currentScrolling = left;
   res[res.length]= currentScrolling;
   if(res[res.length-2]>res[res.length-1]){
-    $("#camion").attr("href", "Images/camion_recul.png");
-    console.log("En train d'avancer");
-  }
-  else{
-    $("#camion").attr("href", "Images/camion.png");
+    $("#camion").attr("src", "Images/camion_recul.png");
     console.log("En train de reculer");
   }
+  else{
+    $("#camion").attr("src", "Images/camion.png");
+    console.log("En train d'avancer");
+  }
 });
+
 /**************** PANORAMA ***************/
 var
 $target  = $(".panorama").first(),
@@ -91,6 +92,59 @@ $(document).ready(function(){
 });
 
 /**************** PANORAMA ***************/
+  $('.after_effects').hide()
+$(window).scroll(function(){
+    var effect = document.body.scrollTop;
+    console.log(effect);
+    if(effect > 1200){
+      $("#container_2").show();
+    }
+    else{
+
+    }
+    if(effect > 1600){
+      $("#container_3").show();
+    }
+    else{
+
+    }
+    if(effect > 1800){
+      $("#container_4").show();
+    }
+    else{
+
+    }
+    if(effect > 2200){
+      $("#container_5").show();
+    }
+    else{
+
+    }
+    if(effect < 1200){
+      $("#container_2").hide().addClass('transition-1');
+    }
+    else{
+
+    }
+    if(effect < 1600){
+      $("#container_3").hide().addClass('transition-1');
+    }
+    else{
+
+    }
+    if(effect < 1800){
+      $("#container_4").hide().addClass('transition-1');
+    }
+    else{
+
+    }
+    if(effect < 2200){
+      $("#container_5").hide().addClass('transition-1');
+    }
+    else{
+
+    }
+});
 
 /*************** FADE IN *****************/
 
