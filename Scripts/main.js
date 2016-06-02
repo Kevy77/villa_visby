@@ -36,29 +36,33 @@ new ScrollMagic.Scene({
 res = [];
 $(window).scroll(function() {
   var left = document.body.scrollTop;
+  var scolling = document.body.scrollTop;
   var left = (left - 2500 +'px');
   $(".cam_container img").css({'left': left});
-  /*res = [];
-  var currentScroll = left;
-  var lastScroll;
-  if (currentScroll < lastScroll) {
-    alert('fumé');
-  }
-  tab.push(left);
-  res.push(left);// Inscrit le resultat dans un tableau
-  console.log(res);*/
   var currentScrolling = left;
   res[res.length]= currentScrolling;
   if(res[res.length-2]>res[res.length-1]){
     $("#camion").attr("src", "Images/camion_recul.png");
-    console.log("En train de reculer");
+    console.log("En train de d'avancer");
   }
   else{
     $("#camion").attr("src", "Images/camion.png");
-    console.log("En train d'avancer");
+    console.log("En train de reculer");
+  }
+  if((res[res.length-2]>res[res.length-1]) & ( scolling > 2500)){
+    if (scolling < 3500) {
+      var beep = new Audio ();
+      beep.src = "sounds/beep.wav"
+      beep.play();
+    }
+    else {
+
+    }
+  }
+  else{
+
   }
 });
-
 /**************** PANORAMA ***************/
 var
 $target  = $(".panorama").first(),
