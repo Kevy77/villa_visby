@@ -606,9 +606,32 @@ section > div {
 .red {
  display: block;
 }
-.green {
+/**************FORMULAIRE CONTACT*************/
 
+.under-form input {
+  background-color: rgba(181, 148, 129, 1);
+  border: none;
+  color: #464646;
+  margin: 20px 0px;
+  padding: 5px 10px;
+  width: 550px;
+  height: 45px;
 }
+
+.under-form textarea {
+  background-color: rgba(181, 148, 129, 1);
+  width: 99%;
+  color: #464646;
+  padding: 5px 10px;
+}
+
+.under-form {
+  width: 100%;
+  padding: 100px;
+  border: 0.7px solid rgba(239, 239, 239, 0.5);
+  background-color: rgba(239, 239, 239, 0.2);
+}
+
 
 /********* PANORAMA *****************/
 .panorama-viewport {
