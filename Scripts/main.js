@@ -314,17 +314,23 @@ $('.form').find('input, textarea').on('keyup blur focus', function (e) {
 
 });
 
-$('.tab a').on('click', function (e) {
-  
-  e.preventDefault();
-  
-  $(this).parent().addClass('active');
-  $(this).parent().siblings().removeClass('active');
-  
-  target = $(this).attr('href');
+/********** MASONRY ***********/
 
-  $('.tab-content > div').not(target).hide();
-  
-  $(target).fadeIn(600);
-  
+var grid = document.querySelector('.grid');
+var msnry = new Masonry( grid, {
+  columnWidth: 120,
+  itemSelector: '.grid-item'
 });
+
+grid.addEventListener( 'click', function( event ) {
+  // don't proceed if item content was not clicked on
+  if ( !matchesSelector( event.target, '.grid-item-content' )  ) {
+    return;
+  }
+  var itemElem = event.target.parentNode;
+  itemElem.classList.toggle('is-expanded');
+
+  msnry.layout();
+});
+
+/********** MASONRY ***********/
