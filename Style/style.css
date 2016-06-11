@@ -284,7 +284,6 @@ a:hover,a:visited{
 #container_5{
   z-index: 10
 }
-/*
 .view_2{
   margin-left: -400px;
   transition:1s margin-left,1s width,1s opacity;
@@ -293,7 +292,7 @@ a:hover,a:visited{
   margin-left:0px !important;
   transition:1s margin-left,1s width,1s opacity;
 }
-*/
+
 .color_2{
     background-color: #c6b19a;
 }
@@ -527,7 +526,7 @@ body {
 }
 
 #slideContainer {
-    width: 310%;
+    width: 400%;
     height: 100vh;
 }
 
@@ -566,7 +565,6 @@ button {
 }
 .four {
   overflow: hidden;
-  margin: auto;
 }
 @import "compass/css3";
 
@@ -833,59 +831,3 @@ section > div {
 }
 
 /****************** MASONRY *******************/
-
-/********** CONTAINER INCLINÉ **********/
-
-.productContainer{
-    background-color: #ccb093;
-    padding: 110px 20px;
-    width: 200px;
-    height: 100vh;
-    float: left;
-    position: relative;
-  transform: skewX(-15deg);
-}
-
-.productContainer:hover{
-    width: 300px;
-  background-color: #a7968b;
-  margin-right: -20px;
-  transition: width 0.3s, height 0.3s, transform 0s;
-}
-
-
-
-
-
-.productContainer2{
-    background-color: #e8c9a7;
-    padding: 100px 20px;
-    width: 200px;
-    float: left;
-    position: relative;
-    height: 100vh;
-  transform: skewX(-15deg);
-  margin-right: -10px;
-}
-
-.productContainer2:hover{
-    width: 300px;
-    position: relative;
-    height: 100vh;
-  background-color: #a7968b;
-  margin-left: 0px;
-  margin-right: -32px;
-  transition: width 0.3s, height 0.3s, transform 0s;
-}
-.container__first{
-    margin-left: -80px;
-}
-
-.title_product{
-  color: #FFFFFF;
-  font-family: 'Museo',sans-serif;
-  font-weight: 300;
-  text-align: center;
-  font-size: 22px;
-  transform: skewX(+15deg);
-}
