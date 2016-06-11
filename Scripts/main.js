@@ -17,7 +17,7 @@ var controller = new ScrollMagic.Controller();
 // Définit le mouvement des panels
 var wipeAnimation = new TimelineMax()
 .to("#slideContainer", 1, {
-  x: "-75%"
+  x: "-57%;"
 })
 
 // creation d'une action
@@ -37,7 +37,7 @@ res = [];
 $(window).scroll(function() {
   var left = document.body.scrollTop;
   var scolling = document.body.scrollTop;
-  var left = (left - 2500 +'px');
+  var left = (left - 2600 +'px');
   $(".cam_container img").css({'left': left});
   var currentScrolling = left;
   res[res.length]= currentScrolling;
@@ -286,7 +286,7 @@ $(window).scroll(function() {
 /************* BLUR ON SCROLL ********************/
 
 $('.form').find('input, textarea').on('keyup blur focus', function (e) {
-  
+
   var $this = $(this),
       label = $this.prev('label');
 
@@ -298,15 +298,15 @@ $('.form').find('input, textarea').on('keyup blur focus', function (e) {
         }
     } else if (e.type === 'blur') {
     	if( $this.val() === '' ) {
-    		label.removeClass('active highlight'); 
+    		label.removeClass('active highlight');
 			} else {
-		    label.removeClass('highlight');   
-			}   
+		    label.removeClass('highlight');
+			}
     } else if (e.type === 'focus') {
-      
+
       if( $this.val() === '' ) {
-    		label.removeClass('highlight'); 
-			} 
+    		label.removeClass('highlight');
+			}
       else if( $this.val() !== '' ) {
 		    label.addClass('highlight');
 			}
