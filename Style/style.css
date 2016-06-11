@@ -569,7 +569,7 @@ button {
   margin: auto;
   width: 1440px;
   position: absolute;
-  transform: translateX(200%);
+  transform: translateX(210%);
 
 }
 @import "compass/css3";
@@ -895,6 +895,6 @@ section > div {
 }
 @media screen and (min-width: 1280px) and (max-width: 1400px) {
   .four {
-    transform: translateX(198%);
+    transform: translateX(202%);
   }
 }
