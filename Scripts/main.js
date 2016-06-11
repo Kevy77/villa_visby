@@ -1,3 +1,12 @@
+$(document).ready(function(){
+var fourtaille = $('.four').width()
+var onetaille =  $('.one').width()
+var twotaille = $('.two').width();
+
+var totaltaille = (fourtaille + onetaille + twotaille +'px');
+ $("#slideContainer").css('width',totaltaille);
+});
+
 /************ HORIZONTAL *****************/
 
 var x = $(".one h1").offset();
@@ -17,7 +26,7 @@ var controller = new ScrollMagic.Controller();
 // Définit le mouvement des panels
 var wipeAnimation = new TimelineMax()
 .to("#slideContainer", 1, {
-  x: "-57%;"
+  x: "-75%;"
 })
 
 // creation d'une action
@@ -245,10 +254,7 @@ $(document).ready(function(){
         $('#mob_ext').slideUp(300);
         $('#buffet').slideUp(300);
         $('#deco').slideDown(300);
-
-
     });
-
 });
 
 /************* FADE IN ********************/
