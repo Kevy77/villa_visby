@@ -1,4 +1,5 @@
 $(document).ready(function(){
+  $('#gal1').galereya();
 var fourtaille = $('.four').width()
 var onetaille =  $('.one').width()
 var twotaille = $('.two').width();
