@@ -55,13 +55,13 @@ ul p{
 .product_hov{
   overflow: hidden;
     margin-top: 30px;
-    border: 2px solid #a8857c;
+    border: 3px solid #a8857c;
 }
 .img__result{
-  min-height: 200px;
-  max-height: 200px;
+  min-height: 186px;
+  max-height: 186px;
   width: 100%;
-    max-width: 100%; 
+    max-width: 100%;
   -moz-transition: all 0.3s;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -241,7 +241,6 @@ hr{
 .productContainer:hover .description_product {
   visibility: visible;
   opacity: 1;
-    margin-bottom: 40px;
 }
 .productContainer2:hover .description_product {
   visibility: visible;
@@ -267,7 +266,6 @@ hr{
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    display: block;
     margin: 0 auto;
     vertical-align: middle;
     background-color: #ddd1cb;
@@ -277,7 +275,11 @@ hr{
     -moz-transform: skewX(+10deg);
     -ms-transform: skewX(+10deg);
     -webkit-transform: skewX(+10deg);
-    transform: skewX(+10deg);
+    transform: skewX(+10deg) translateX(-60%);
+    display: block;
+    position: absolute;
+    bottom: 200px;
+    margin-left: 50%;
 }
 a:hover,a:visited{
     text-decoration: none;
@@ -521,6 +523,7 @@ h1.design__2{
     background-color: rgba(181, 148, 129, 1);
     background-origin: padding-box;
     padding: 10px;
+    transition-duration: 0.6s;
 }
 .store{
   padding: 50px;
@@ -605,7 +608,7 @@ button {
   width: 1440px;
   position: absolute;
   margin-left: -155px;
-  transform: translateX(220%);
+  transform: translateX(226%);
 
 }
 @import "compass/css3";
@@ -837,13 +840,14 @@ section > div {
     float: left;
     position: relative;
   transform: skewX(-15deg);
+  transition: width 0.6s, height 0.6s, transform 0s;
 }
 
 .productContainer:hover{
     width: 300px;
   background-color: #a7968b;
   margin-right: -20px;
-  transition: width 0.3s, height 0.3s, transform 0s;
+  transition: width 0.6s, height 0.6s, transform 0s;
 }
 
 
@@ -858,6 +862,7 @@ section > div {
     height: 100vh;
   transform: skewX(-15deg);
   margin-right: -10px;
+  transition: width 0.6s, height 0.6s, transform 0s;
 }
 
 .productContainer2:hover{
@@ -880,6 +885,7 @@ section > div {
     height: 100vh;
   transform: skewX(-15deg);
   margin-right: -10px;
+  transition: width 0.6s, height 0.6s, transform 0s;
 }
 
 .productContainer3:hover{
@@ -902,6 +908,7 @@ section > div {
     height: 100vh;
   transform: skewX(-15deg);
   margin-right: -10px;
+  transition: width 0.6s, height 0.6s, transform 0s;
 }
 
 .productContainer4:hover{
@@ -924,6 +931,7 @@ section > div {
     height: 100vh;
   transform: skewX(-15deg);
   margin-right: -10px;
+  transition: width 0.6s, height 0.6s, transform 0s;
 }
 
 .productContainer5:hover{
@@ -946,6 +954,7 @@ section > div {
     height: 100vh;
   transform: skewX(-15deg);
   margin-right: -10px;
+  transition: width 0.6s, height 0.6s, transform 0s;
 }
 
 .productContainer6:hover{
