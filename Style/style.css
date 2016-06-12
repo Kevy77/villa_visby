@@ -508,8 +508,33 @@ h1.design__7{
     color: white;
     border: 15px solid rgba(181, 148, 129, 0.6);
     padding: 10px;
-    margin-top: -100px;
-    margin-bottom: 20px;
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+    margin-top:-60px;
+}
+h1.design__8{
+    font-family: 'Museo', sans-serif;
+    font-size: 36px;
+    color: white;
+    border: 15px solid rgba(181, 148, 129, 0.6);
+    padding: 10px;
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+    margin-top:-20px;
+}
+.red iframe{
+  height: 70vh;
+  margin-top: 100px;
+  position: relative;
+}
+.store{
+  position: absolute;
+  z-index: 10;
+  right: 40px;
+  margin-top: 130px;
+  color: black;
 }
 h1.design__4{
     font-family: 'Museo', sans-serif;
