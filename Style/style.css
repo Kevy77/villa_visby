@@ -617,9 +617,9 @@ button {
   transform: translateX(220%);
 
 }
-@media screen and (min-width: 600px) and (max-width: 700px) {
+@media screen and (min-width: 700px) and (max-width: 1480px) {
   .four{
-    transform: translateX(220%);
+    transform: translateX(226%);
   }
 }
 @import "compass/css3";
