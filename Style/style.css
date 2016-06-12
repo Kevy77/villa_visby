@@ -89,6 +89,7 @@ ul p{
 }
 .grey_block,.black_block,.brown_block,.brown__block{
   margin: 10px;
+    border-radius: 50%;
 }
 .grey_block{
     width: 30px;
@@ -237,6 +238,7 @@ hr{
     color: white;
     position: absolute;
     visibility: hidden;
+    margin-top: 40px;
 }
 .productContainer:hover .description_product {
   visibility: visible;
@@ -255,6 +257,10 @@ hr{
   opacity: 1;
 }
 .productContainer5:hover .description_product {
+  visibility: visible;
+  opacity: 1;
+}
+.productContainer6:hover .description_product {
   visibility: visible;
   opacity: 1;
 }
@@ -278,7 +284,7 @@ hr{
     transform: skewX(+10deg) translateX(-60%);
     display: block;
     position: absolute;
-    bottom: 200px;
+    bottom: 100px;
     margin-left: 50%;
 }
 a:hover,a:visited{
@@ -608,7 +614,7 @@ button {
   width: 1440px;
   position: absolute;
   margin-left: -155px;
-  transform: translateX(226%);
+  transform: translateX(220%);
 
 }
 @media screen and (min-width: 600px) and (max-width: 700px) {
@@ -949,7 +955,7 @@ section > div {
   transition: width 0.6s, height 0.6s, transform 0s;
 }
 .productContainer6{
-    background-image: url(http://www.ptmd.fr/media/wysiwyg/1---sage-green.jpg);
+    background-image: url(../Images/product_dco.png);
     background-size:cover;
     border: 2px solid white;
     padding: 100px 20px;
