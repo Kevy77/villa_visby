@@ -47,7 +47,7 @@ res = [];
 $(window).scroll(function() {
   var left = document.body.scrollTop;
   var scolling = document.body.scrollTop;
-  var left = (left - 2600 +'px');
+  var left = (left - 3000 +'px');
   $(".cam_container img").css({'left': left});
   var currentScrolling = left;
   res[res.length]= currentScrolling;
