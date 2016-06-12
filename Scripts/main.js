@@ -3,7 +3,7 @@ var fourtaille = $('.four').width()
 var onetaille =  $('.one').width()
 var twotaille = $('.two').width();
 
-var totaltaille = (fourtaille + onetaille + twotaille +'px');
+var totaltaille = (fourtaille + onetaille + twotaille - 100 +'px');
  $("#slideContainer").css('width',totaltaille);
 });
 
@@ -72,38 +72,6 @@ $(window).scroll(function() {
 
   }
 });
-/**************** PANORAMA ***************/
-var
-$target  = $(".panorama").first(),
-    currentPosition = 0,
-    moveBy = function(scrolledBy){
-      currentPosition += scrolledBy;
-      $target.css("transform", "translateX(" + (currentPosition) + "px)")
-    },
-    lastScrollTop = 0 ;
-
-$(window).bind("scroll",function(e){
-  var scrolledBy = $(window).scrollTop() - lastScrollTop;
-  moveBy(-scrolledBy);
-  lastScrollTop = $(window).scrollTop();
-});
-
-$(document).ready(function(){
-  var image = $(".panorama > img"),
-      $target  = $(".panorama").first();
-  image.load(function(){
-    var panorama = $(".panorama"),
-        updateHtml = "";
-    var imageSrc = image.attr("src");
-    var imagesNeededToFillDocument = $(document).height() / image.width();
-    for(var i =0; i < imagesNeededToFillDocument; i ++){
-      updateHtml += "<img src='"+imageSrc+"'>";
-    }
-    panorama.append(updateHtml);
-    $(".loader").first().hide();
-  });
-});
-
 /**************** Products ***************/
 $(window).scroll(function(){
     var effect = document.body.scrollTop;
@@ -163,6 +131,20 @@ $(window).scroll(function(){
 
 $(document).ready(function(){
   $('#villa').fadeIn(2000);
+  $(function() {
+    $('a[href*="#"]:not([href="#"])').click(function() {
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+          $('html, body').animate({
+            scrollTop: target.offset().top
+          }, 1000);
+          return false;
+        }
+      }
+    });
+  });
 });
 
 $(document).ready(function(){
@@ -181,13 +163,13 @@ $(document).ready(function(){
     });
     $('.btn__click').click(function(e){
         e.preventDefault();
-        $("#content-2").slideDown( 300);
+        $("#content-2").slideDown(600);
         $("#content-1").hide();
     });
     $('.btn__click_cross').click(function(e){
         e.preventDefault();
-        $("#content-2").slideUp( 300);
-        $("#content-1").show(1000);
+        $("#content-2").slideUp(600);
+        $("#content-1").slideDown(600);
     });
     $('#canapes_btn').click(function(e){
         e.preventDefault();
@@ -246,6 +228,72 @@ $(document).ready(function(){
 
     });
     $('#deco_btn').click(function(e){
+        e.preventDefault();
+        $( ".design__4" ).replaceWith('<h1 class="design__4">nos décorations</h1>');
+        $('#canapes').slideUp(300);
+        $('#fauteuil').slideUp(300);
+        $('#tables').slideUp(300);
+        $('#mob_ext').slideUp(300);
+        $('#buffet').slideUp(300);
+        $('#deco').slideDown(300);
+    });
+    $('#canapes_btn').click(function(e){
+        e.preventDefault();
+        $( ".design__4" ).replaceWith('<h1 class="design__4">nos canapés</h1>');
+        $('#canapes').slideDown(300);
+        $('#fauteuil').slideUp(300);
+        $('#tables').slideUp(300);
+        $('#mob_ext').slideUp(300);
+        $('#buffet').slideUp(300);
+        $('#deco').slideUp(300);
+
+    });
+    $('#fauteuils_btn_1').click(function(e){
+        e.preventDefault();
+        $( ".design__4" ).replaceWith('<h1 class="design__4">nos fauteuils</h1>');
+        $('#canapes').slideUp(300);
+        $('#fauteuil').slideDown(300);
+        $('#tables').slideUp(300);
+        $('#mob_ext').slideUp(300);
+        $('#buffet').slideUp(300);
+        $('#deco').slideUp(300);
+
+    });
+    $('#tables_btn_1').click(function(e){
+        e.preventDefault();
+        $( ".design__4" ).replaceWith('<h1 class="design__4">nos tables</h1>');
+        $('#canapes').slideUp(300);
+        $('#fauteuil').slideUp(300);
+        $('#tables').slideDown(300);
+        $('#mob_ext').slideUp(300);
+        $('#buffet').slideUp(300);
+        $('#deco').slideUp(300);
+    });
+    $('#mob_ext_btn_1').click(function(e){
+        e.preventDefault();
+        $( ".design__4" ).replaceWith('<h1 class="design__4">mobilier d&apos;exterieur</h1>');
+        $('#canapes').slideUp(300);
+        $('#fauteuil').slideUp(300);
+        $('#tables').slideUp(300);
+        $('#mob_ext').slideDown(300);
+        $('#buffet').slideUp(300);
+        $('#deco').slideUp(300);
+
+
+    });
+    $('#buffet_btn_1').click(function(e){
+        e.preventDefault();
+        $( ".design__4" ).replaceWith('<h1 class="design__4">nos buffets</h1>');
+        $('#canapes').slideUp(300);
+        $('#fauteuil').slideUp(300);
+        $('#tables').slideUp(300);
+        $('#mob_ext').slideUp(300);
+        $('#buffet').slideDown(300);
+        $('#deco').slideUp(300);
+
+
+    });
+    $('#deco_btn_1').click(function(e){
         e.preventDefault();
         $( ".design__4" ).replaceWith('<h1 class="design__4">nos décorations</h1>');
         $('#canapes').slideUp(300);
@@ -318,25 +366,6 @@ $('.form').find('input, textarea').on('keyup blur focus', function (e) {
 			}
     }
 
-});
-
-/********** MASONRY ***********/
-
-var grid = document.querySelector('.grid');
-var msnry = new Masonry( grid, {
-  columnWidth: 120,
-  itemSelector: '.grid-item'
-});
-
-grid.addEventListener( 'click', function( event ) {
-  // don't proceed if item content was not clicked on
-  if ( !matchesSelector( event.target, '.grid-item-content' )  ) {
-    return;
-  }
-  var itemElem = event.target.parentNode;
-  itemElem.classList.toggle('is-expanded');
-
-  msnry.layout();
 });
 
 /********** MASONRY ***********/

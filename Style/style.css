@@ -325,9 +325,8 @@ a:hover,a:visited{
     border-radius: 50%;
     display: block;
     margin: 0 auto;
-    margin-top: 100px;
+    margin-top: 25px;
     z-index: 0;
-    margin-top: 70px;
     padding: 25px;
     color: white;
     background: rgba(255,255,255,0.6);
@@ -391,11 +390,11 @@ a:hover,a:visited{
 }
 .square_bd{
     border: 6px solid rgba(255,255,255,0.6);
-    min-height: 200px;
+    min-height: 180px;
     margin: 10px;
     float: left;
     width: 350px;
-    margin-top: 50px;
+    margin-top: 25px;
 }
 .content_del{
     margin: 10px;
@@ -569,7 +568,8 @@ button {
   margin: auto;
   width: 1440px;
   position: absolute;
-  transform: translateX(210%);
+  margin-left: -155px;
+  transform: translateX(220%);
 
 }
 @import "compass/css3";
@@ -789,55 +789,6 @@ section > div {
 .green{
     overflow: hidden;
 }
-.grid {
-    width: 1280px;
-    height: 677px;
-    max-height: 100%;
-    max-width: 1200px;
-    display: inline;
-}
-.grid-item {
-    float: left;
-}
-.grid-item,
-.grid-item-content {
-    width: 120px;
-    height: 120px;
-}
-.grid-item-content {
-    width: 120px;
-    height: 120px;
-    background-image: url(https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/1014077_1143619635648684_902912057796120241_n.jpg?oh=753d724a4f359d87047a2ca00f2a83b4&oe=57C35941);
-    background-size: cover;
-    border: none;
-    border: 2px solid #333;
-    border-color: hsla(0, 0%, 0%, 0.5);
-    border-radius: 5px;
-    -webkit-transition: width 0.4s, height 0.4s;
-    transition: width 0.4s, height 0.4s;
-}
-.grid-item:hover .grid-item-content {
-    border-color: white;
-    background-color: black;
-    opacity: 0, 3;
-    cursor: pointer;
-}
-
-.grid-item.is-expanded,
-.grid-item.is-expanded .grid-item-content {
-    width: 360px;
-    height: 240px;
-}
-.grid-item.is-expanded {
-    z-index: 2;
-}
-.grid-item.is-expanded .grid-item-content {
-    background-image: url(https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/1014077_1143619635648684_902912057796120241_n.jpg?oh=753d724a4f359d87047a2ca00f2a83b4&oe=57C35941);
-    background-size: cover;
-}
-
-/****************** MASONRY *******************/
-
 /********** CONTAINER INCLINÉ **********/
 
 .productContainer{
@@ -852,7 +803,6 @@ section > div {
 
 .productContainer:hover{
     width: 300px;
-  background-color: #a7968b;
   margin-right: -20px;
   transition: width 0.3s, height 0.3s, transform 0s;
 }
@@ -876,7 +826,6 @@ section > div {
     width: 300px;
     position: relative;
     height: 100vh;
-  background-color: #a7968b;
   margin-left: 0px;
   margin-right: -32px;
   transition: width 0.3s, height 0.3s, transform 0s;
@@ -895,6 +844,6 @@ section > div {
 }
 @media screen and (min-width: 1280px) and (max-width: 1400px) {
   .four {
-    transform: translateX(202%);
+    transform: translateX(213%);
   }
 }
