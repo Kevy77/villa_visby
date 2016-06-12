@@ -52,18 +52,31 @@ ul p{
   border: 3px solid #a8857c;
   margin-top: 30px;
 }
+.product_hov{
+  overflow: hidden;
+    margin-top: 30px;
+    border: 2px solid #a8857c;
+}
 .img__result{
-  margin-top: 30px;
   min-height: 200px;
   max-height: 200px;
   width: 100%;
+    max-width: 100%; 
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.img__result:hover {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
 .title_product__c{
   color: black;
   font-family: 'Museo',sans-serif;
   font-weight: 300;
   text-align: center;
-  font-size: 22px;
+  font-size: 16px;
 }
 .description_product__c,.coloris_product__c{
   color: black;
@@ -205,8 +218,9 @@ hr{
 .img_skew{
     max-width: 100%;
     border: none;
-    margin: 80px 0px;
-    width: 80%;
+    margin: 20px 0px;
+    width: 160px;
+    height: 75px;
     -moz-transform: skewX(+10deg);
     -ms-transform: skewX(+10deg);
     -webkit-transform: skewX(+10deg);
@@ -214,14 +228,36 @@ hr{
 }
 .title_product{
     font-family: 'Museo', sans-serif;
-    font-size: 30px;
+    font-size: 22px;
     color: white;
 }
 .description_product{
-    font-family: 'Museo', sans-serif;
-    font-size: 10px;
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
     color: white;
-
+    position: absolute;
+    visibility: hidden;
+}
+.productContainer:hover .description_product {
+  visibility: visible;
+  opacity: 1;
+    margin-bottom: 40px;
+}
+.productContainer2:hover .description_product {
+  visibility: visible;
+  opacity: 1;
+}
+.productContainer3:hover .description_product {
+  visibility: visible;
+  opacity: 1;
+}
+.productContainer4:hover .description_product {
+  visibility: visible;
+  opacity: 1;
+}
+.productContainer5:hover .description_product {
+  visibility: visible;
+  opacity: 1;
 }
 .btn__click{
     text-decoration: none;
@@ -236,7 +272,7 @@ hr{
     vertical-align: middle;
     background-color: #ddd1cb;
     padding: 32px 0px;
-    margin-top: 40px;
+    margin-top: 140px;
     border: 15px solid rgba(188,163,152,0.6);
     -moz-transform: skewX(+10deg);
     -ms-transform: skewX(+10deg);
@@ -792,7 +828,9 @@ section > div {
 /********** CONTAINER INCLINÉ **********/
 
 .productContainer{
-    background-color: #ccb093;
+    background-image: url(../Images/product_kanape.png);
+    background-size: cover;
+    border: 2px solid white;
     padding: 110px 20px;
     width: 200px;
     height: 100vh;
@@ -803,16 +841,16 @@ section > div {
 
 .productContainer:hover{
     width: 300px;
+  background-color: #a7968b;
   margin-right: -20px;
   transition: width 0.3s, height 0.3s, transform 0s;
 }
 
 
-
-
-
 .productContainer2{
-    background-color: #e8c9a7;
+    background-image: url(http://interiorzine.com/wp-content/uploads/2015/11/fenice-chair-collection-domitalia-4.jpg);
+    background-size:cover;
+    border: 2px solid white;
     padding: 100px 20px;
     width: 200px;
     float: left;
@@ -826,24 +864,96 @@ section > div {
     width: 300px;
     position: relative;
     height: 100vh;
+  background-color: #a7968b;
   margin-left: 0px;
   margin-right: -32px;
-  transition: width 0.3s, height 0.3s, transform 0s;
+  transition: width 0.6s, height 0.6s, transform 0s;
 }
-.container__first{
-    margin-left: -80px;
+.productContainer3{
+    background-image: url(../Images/product_table%202.png);
+    background-size:cover;
+    border: 2px solid white;
+    padding: 100px 20px;
+    width: 200px;
+    float: left;
+    position: relative;
+    height: 100vh;
+  transform: skewX(-15deg);
+  margin-right: -10px;
 }
 
-.title_product{
-  color: #FFFFFF;
-  font-family: 'Museo',sans-serif;
-  font-weight: 300;
-  text-align: center;
-  font-size: 22px;
-  transform: skewX(+15deg);
+.productContainer3:hover{
+    width: 300px;
+    position: relative;
+    height: 100vh;
+  background-color: #a7968b;
+  margin-left: 0px;
+  margin-right: -32px;
+  transition: width 0.6s, height 0.6s, transform 0s;
 }
-@media screen and (min-width: 1280px) and (max-width: 1400px) {
-  .four {
-    transform: translateX(213%);
-  }
+.productContainer4{
+    background-image: url(../Images/product_ext.jpg);
+    background-size:cover;
+    border: 2px solid white;
+    padding: 100px 20px;
+    width: 200px;
+    float: left;
+    position: relative;
+    height: 100vh;
+  transform: skewX(-15deg);
+  margin-right: -10px;
+}
+
+.productContainer4:hover{
+    width: 300px;
+    position: relative;
+    height: 100vh;
+  background-color: #a7968b;
+  margin-left: 0px;
+  margin-right: -32px;
+  transition: width 0.6s, height 0.6s, transform 0s;
+}
+.productContainer5{
+    background-image: url(../Images/product_buffet.jpg);
+    background-size:cover;
+    border: 2px solid white;
+    padding: 100px 20px;
+    width: 200px;
+    float: left;
+    position: relative;
+    height: 100vh;
+  transform: skewX(-15deg);
+  margin-right: -10px;
+}
+
+.productContainer5:hover{
+    width: 300px;
+    position: relative;
+    height: 100vh;
+  background-color: #a7968b;
+  margin-left: 0px;
+  margin-right: -32px;
+  transition: width 0.6s, height 0.6s, transform 0s;
+}
+.productContainer6{
+    background-image: url(http://www.ptmd.fr/media/wysiwyg/1---sage-green.jpg);
+    background-size:cover;
+    border: 2px solid white;
+    padding: 100px 20px;
+    width: 200px;
+    float: left;
+    position: relative;
+    height: 100vh;
+  transform: skewX(-15deg);
+  margin-right: -10px;
+}
+
+.productContainer6:hover{
+    width: 300px;
+    position: relative;
+    height: 100vh;
+  background-color: #a7968b;
+  margin-left: 0px;
+  margin-right: -32px;
+  transition: width 0.6s, height 0.6s, transform 0s;
 }
