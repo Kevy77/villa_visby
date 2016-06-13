@@ -6,6 +6,8 @@ var twotaille = $('.two').width();
 
 var totaltaille = (fourtaille + onetaille + twotaille - 100 +'px');
  $("#slideContainer").css('width',totaltaille);
+ width = $(window).width();
+ $(".one").css({'width': width});
 });
 
 /************ HORIZONTAL *****************/
@@ -316,10 +318,11 @@ $(window).scroll(function(){
 
 /************* RESOLUTION ********************/
 
-$(document).ready(function(){
+$(window).resize(function(){
   width = $(window).width();
   $(".one").css({'width': width});
 });
+
 /************* BLUR ON SCROLL ********************/
 $(window).scroll(function() {
   // Get scroll position
