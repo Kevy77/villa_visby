@@ -707,9 +707,7 @@ section > div {
 .full-screen {
     height: 100vh;
 }
-#green{
-  overflow-x: hidden;
-}
+#green{}
 #logo {
     width: 100%;
 }
