@@ -410,8 +410,4 @@ jQuery(window).scroll(function(){
     }else{
         jQuery('img-src').removeClass('scrolled');
     }
-<<<<<<< HEAD
 });
-=======
-});
->>>>>>> origin/master

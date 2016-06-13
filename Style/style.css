@@ -528,7 +528,6 @@ h1.design__8{
   height: 70vh;
   margin-top: 100px;
   position: relative;
-  pointer-events: none;
 }
 .store{
   position: absolute;
