@@ -713,19 +713,19 @@ section > div {
 .under-form input {
   border: none;
   color: #464646;
-  margin: 20px 0px;
-  padding: 5px 10px;
-  width: 550px;
+  width: 60%;
   height: 45px;
+  margin: 10px 0px;
 
   background-color: rgba(181, 148, 129, 1);
 }
 
 .under-form textarea {
   background-color: rgba(181, 148, 129, 1);
-  width: 99%;
+  width: 60%;
   color: #464646;
   padding: 5px 10px;
+  margin: 10px 0px;
 }
 
 .under-form {
@@ -1019,12 +1019,19 @@ section > div {
   margin-right: -32px;
   transition: width 0.6s, height 0.6s, transform 0s;
 }
-
+.last_rel{
+  position: relative;
+}
 /********** contact **********/
 .contact{
-  background-image: url(../Images/backgroundcontact.png);
-  background-repeat: no-repeat;
-  background-size: contain;
+  background: url(../Images/backgroundcontact.png) no-repeat top center;
+  height: 100vh;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  background-size: cover;
 }
 
 /********** footer **********/
