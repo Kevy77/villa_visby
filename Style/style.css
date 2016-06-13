@@ -659,7 +659,7 @@ button {
 }
 @media screen and (min-width: 1250px) and (max-width: 1350px) {
   .four{
-    transform: translateX(212%);
+    transform: translateX(218%);
   }
 }
 @import "compass/css3";
