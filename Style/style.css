@@ -657,7 +657,7 @@ button {
     transform: translateX(226%);
   }
 }
-@media screen and (min-width: 1150px) and (max-width: 1250px) {
+@media screen and (min-width: 1250px) and (max-width: 1150px) {
   .four{
     transform: translateX(212%);
   }
