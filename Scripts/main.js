@@ -368,7 +368,38 @@ $('.form').find('input, textarea').on('keyup blur focus', function (e) {
     }
 
 });
+var text = 'kyle est une grosse pute sa race la pute une ';
 
+var currentChar = 1;
+var htmltag = false;
+var cache = '';
+
+
+function type() {
+    var str = text.substr(0, currentChar);
+    var last = str.substr(str.length - 1, str.length);
+    if (last != '<' && last != '>' & last != '/') {
+        $("#consoleText2").html(str);
+    }
+    currentChar++;
+    if (currentChar <= text.length) {
+        if (last == '<') {
+            htmltag = true;
+        } else if (last == '>') {
+            htmltag = false;
+        }
+        if (htmltag) {
+            setTimeout(type, 1);
+        } else {
+            setTimeout(type, 50);
+        }
+    }
+}
+
+$(document).ready(function () {
+    $("#consoleText2").html("");
+    setTimeout(type, 2000);
+});
 /********** MASONRY ***********/
 
 jQuery(window).scroll(function(){

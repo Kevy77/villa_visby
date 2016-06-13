@@ -657,6 +657,11 @@ button {
     transform: translateX(226%);
   }
 }
+@media screen and (min-width: 1150px) and (max-width: 1250px) {
+  .four{
+    transform: translateX(226%);
+  }
+}
 @import "compass/css3";
 
 #meubles{
@@ -873,7 +878,38 @@ section > div {
     opacity: 0;
     background-image: url(../Images/blur.jpeg);
 }
-/****************** MASONRY *******************/
+/****************** MACHINE A ECRIRE *******************/
+
+#console2 {
+        height: 200px;
+        border-radius: 5px;
+        margin-bottom: 15px;
+        padding: 15px 15px;
+        text-align: center;
+    }
+    #console2 pre {
+        font-family:'Monaco', courier, monospace;
+        line-height: 1.5;
+        overflow: hidden;
+        color: white;
+    }
+    #console2 pre a {
+        font-weight: bold;
+        color: #fff;
+        text-decoration: underline;
+    }
+    #console2 .keyword {
+        color: #ec77b4;
+    }
+    #console2 .string {
+        color: #ff8714;
+    }
+    #console2 .function {
+        color: #96c9ff;
+    }
+    #console2 .variable {
+        color: #ffd67d;
+    }
 /********** CONTAINER INCLINÉ **********/
 
 .productContainer{
