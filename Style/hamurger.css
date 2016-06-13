@@ -35,8 +35,8 @@
   top: 50%;
   margin-top: -2px; }
   .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
-    width: 40px;
-    height: 4px;
+    width: 30px;
+    height: 2px;
     background-color: #000;
     border-radius: 4px;
     position: absolute;
@@ -49,7 +49,7 @@
     content: "";
     display: block; }
   .hamburger-inner::before {
-    top: -10px; }
+    top: -8px; }
   .hamburger-inner::after {
     bottom: -10px; }
 
@@ -464,16 +464,16 @@
  * Slider
  */
 .hamburger--slider .hamburger-inner {
-  top: 2px; }
+  top: 5px; }
   .hamburger--slider .hamburger-inner::before {
-    top: 10px;
+    top: 8px;
     transition-property: opacity, -webkit-transform;
     transition-property: transform, opacity;
     transition-property: transform, opacity, -webkit-transform;
     transition-timing-function: ease;
     transition-duration: 0.2s; }
   .hamburger--slider .hamburger-inner::after {
-    top: 20px; }
+    top: 16px; }
 
 .hamburger--slider.is-active .hamburger-inner {
   -webkit-transform: translate3d(0, 10px, 0) rotate(45deg);
@@ -483,8 +483,8 @@
             transform: rotate(-45deg) translate3d(-5.71429px, -6px, 0);
     opacity: 0; }
   .hamburger--slider.is-active .hamburger-inner::after {
-    -webkit-transform: translate3d(0, -20px, 0) rotate(-90deg);
-            transform: translate3d(0, -20px, 0) rotate(-90deg); }
+    -webkit-transform: translate3d(0, -16px, 0) rotate(-90deg);
+            transform: translate3d(0, -16px, 0) rotate(-90deg); }
 
 /*
  * Slider Reverse
