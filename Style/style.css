@@ -706,6 +706,7 @@ section > div {
 }
 .full-screen {
     height: 100vh;
+    overflow-x: hidden;
 }
 #logo {
     width: 100%;
