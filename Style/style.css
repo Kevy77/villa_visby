@@ -656,6 +656,11 @@ button {
     transform: translateX(226%);
   }
 }
+@media screen and (min-width: 1150px) and (max-width: 1250px) {
+  .four{
+    transform: translateX(226%);
+  }
+}
 @import "compass/css3";
 
 #meubles{
@@ -705,7 +710,7 @@ section > div {
   padding: 5px 10px;
   width: 550px;
   height: 45px;
-  
+
   background-color: rgba(181, 148, 129, 1);
 }
 
@@ -1036,8 +1041,8 @@ footer{
 }
 .trait{
   width: 1px;
-  
-  height: 200px; 
+
+  height: 200px;
   border-right: 1px solid #FFFFFF;
 }
 
