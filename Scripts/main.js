@@ -370,3 +370,13 @@ $('.form').find('input, textarea').on('keyup blur focus', function (e) {
 });
 
 /********** MASONRY ***********/
+
+jQuery(window).scroll(function(){
+    var fromTopPx = 200; // distance to trigger
+    var scrolledFromtop = jQuery(window).scrollTop();
+    if(scrolledFromtop > fromTopPx){
+        jQuery('img-src').addClass('scrolled');
+    }else{
+        jQuery('img-src').removeClass('scrolled');
+    }
+});
