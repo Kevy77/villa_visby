@@ -700,14 +700,13 @@ section > div {
 /**************FORMULAIRE CONTACT*************/
 
 .under-form input {
+  background-color: rgba(181, 148, 129, 1);
   border: none;
   color: #464646;
   margin: 20px 0px;
   padding: 5px 10px;
   width: 550px;
   height: 45px;
-  
-  background-color: rgba(181, 148, 129, 1);
 }
 
 .under-form textarea {
@@ -720,6 +719,8 @@ section > div {
 .under-form {
   width: 100%;
   padding: 100px;
+  border: 0.7px solid rgba(239, 239, 239, 0.5);
+  background-color: rgba(239, 239, 239, 0.2);
 }
 
 
@@ -1007,49 +1008,4 @@ section > div {
   margin-left: 0px;
   margin-right: -32px;
   transition: width 0.6s, height 0.6s, transform 0s;
-}
-
-/********** contact **********/
-.contact{
-  background-image: url(../Images/backgroundcontact.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
-/********** footer **********/
-footer{
-  width: 100%;
-  background-image: url(../images/backgroundfooter.png);
-  padding: 20px 20px;
-  position: relative;
-}
-
-.menuFooter{
-  border-right: 1px solid #FFFFFF;
-}
-
-.menuFooter li{
-  list-style: none;
-  color: whitesmoke;
-  font-size: 10px;
-  font-family: 'Arial';
-  padding: 1px 0;
-}
-.trait{
-  width: 1px;
-  
-  height: 200px; 
-  border-right: 1px solid #FFFFFF;
-}
-
-.fb-like{
-  position: absolute;
-  color: white;
-}
-
-.copyright{
-  color: #FFFFFF;
-  font-size: 9px;
-  text-align: center;
-  padding: 5px 0;
 }
