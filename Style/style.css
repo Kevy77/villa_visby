@@ -234,7 +234,7 @@ hr{
     font-family: 'Museo', sans-serif;
     font-size: 22px;
     color: white;
-  
+
   transform: skewX(15deg);
 }
 .description_product{
@@ -270,27 +270,32 @@ hr{
   opacity: 1;
 }
 .btn__click{
-    text-decoration: none;
-    font-family: 'Museo', sans-serif;
-    font-size: 12px;
-    color: black;
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin: 0 auto;
-    vertical-align: middle;
-    background-color: #ddd1cb;
-    padding: 32px 0px;
-    margin-top: 140px;
-    border: 15px solid rgba(188,163,152,0.6);
-    -moz-transform: skewX(+15deg);
-    -ms-transform: skewX(+15deg);
-    -webkit-transform: skewX(+15deg);
-    transform: skewX(+15deg) translateX(-60%);
-    display: block;
-    position: absolute;
-    bottom: 200px;
-    margin-left: 50%;
+  text-decoration: none;
+  font-family: 'Museo', sans-serif;
+  font-size: 11px;
+  color: black;
+  width: 114px;
+  height: 114px;
+  border-radius: 50%;
+  margin: 0 auto;
+  vertical-align: middle;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 5px 0px;
+  margin-top: 140px;
+  border: 15px solid transparent;
+  -moz-transform: skewX(+15deg);
+  -ms-transform: skewX(+15deg);
+  -webkit-transform: skewX(+15deg);
+  transform: skewX(+15deg) translateX(-60%);
+  display: block;
+  position: absolute;
+  bottom: 200px;
+  margin-left: 50%;
+  transition-duration: 0.6s;
+}
+.btn__click:hover{
+  background-color: rgba(255, 255, 255, 0.8);
+  transition-duration: 0.6s;
 }
 a:hover,a:visited{
     text-decoration: none;
@@ -941,7 +946,7 @@ textarea-placeholder{
 .productContainer{
     background-image: url(../Images/product_kanape.png);
     background-size: cover;
-    border: 2px solid white;
+
     padding: 100px 20px;
     width: 200px;
     height: 100vh;
@@ -962,7 +967,7 @@ textarea-placeholder{
 .productContainer2{
     background-image: url(http://interiorzine.com/wp-content/uploads/2015/11/fenice-chair-collection-domitalia-4.jpg);
     background-size:cover;
-    border: 2px solid white;
+
     padding: 100px 20px;
     width: 200px;
     float: left;
@@ -985,7 +990,7 @@ textarea-placeholder{
 .productContainer3{
     background-image: url(../Images/product_table%202.png);
     background-size:cover;
-    border: 2px solid white;
+
     padding: 100px 20px;
     width: 200px;
     float: left;
@@ -1008,7 +1013,7 @@ textarea-placeholder{
 .productContainer4{
     background-image: url(../Images/product_ext.jpg);
     background-size:cover;
-    border: 2px solid white;
+
     padding: 100px 20px;
     width: 200px;
     float: left;
@@ -1031,7 +1036,7 @@ textarea-placeholder{
 .productContainer5{
     background-image: url(../Images/product_buffet.jpg);
     background-size:cover;
-    border: 2px solid white;
+
     padding: 100px 20px;
     width: 200px;
     float: left;
@@ -1054,7 +1059,7 @@ textarea-placeholder{
 .productContainer6{
     background-image: url(../Images/product_dco.png);
     background-size:cover;
-    border: 2px solid white;
+
     padding: 100px 20px;
     width: 200px;
     float: left;
