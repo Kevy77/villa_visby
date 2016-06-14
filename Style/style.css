@@ -296,6 +296,12 @@ a:hover,a:visited{
     text-decoration: none;
     color: black;
 }
+#mob_ext_btn{
+    width: 47px;
+}
+#buffet_btn{
+    width: 47px;
+}
 .clearBoth{
     clear: both;
 }
@@ -480,6 +486,9 @@ a:hover,a:visited{
     line-height: 100px;
     text-transform: uppercase;
 
+}
+.rappel{
+    color: #000000;
 }
 h1.design{
     font-family: 'Museo', sans-serif;
