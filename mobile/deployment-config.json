@@ -1,0 +1,9 @@
+{
+    "type": "ftp",
+    "host": "u77418777.1and1-data.host",
+    "username": "u77418777",
+    "password": "Mister9715",
+    "port": 21,
+    "remotePath": "/Hetic/villa",
+    "uploadOnSave": true
+}

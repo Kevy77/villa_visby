@@ -58,8 +58,6 @@
             background-image: linear-gradient(to bottom,  #2d2d2d 0%,#000000 100%);
             -webkit-border-radius: 9px;
             border-radius: 9px;
-            -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, .7);
-            box-shadow: 0 0 5px 0 rgba(0, 0, 0, .7);
         }
 
             .galereya-cats-item {
@@ -185,8 +183,6 @@
             -moz-transition: all 0.5s ease-out;
             -o-transition: all 0.5s ease-out;
             transition: all 0.5s ease-out;
-            -webkit-box-shadow: inset 0 0 10px 3px #000;
-            box-shadow: inset 0 0 10px 3px #000;
         }
 
         .galereya-cell:hover {
@@ -197,16 +193,6 @@
                 bottom: 10px;
 
                 opacity: 100;
-            }
-
-            .galereya-cell:hover .galereya-cell-overlay {
-                -webkit-box-shadow: inset 0 0 0 0 #000, 0 0 20px 4px #000 !important;
-                box-shadow: inset 0 0 0 0 #000, 0 0 20px 4px #000 !important;
-            }
-
-            .galereya-cell.wave .galereya-cell-overlay{
-                -webkit-box-shadow: inset 0 0 10px -2px #000;
-                box-shadow: inset 0 0 10px -2px #000;
             }
     /* Gallery grid(end) */
 
@@ -357,9 +343,6 @@
 
                 background: #1a1a1a url('../img/black_lozenge.png');
                 background-size: 38px 38px;
-
-                -webkit-box-shadow: 0px 0px 20px 4px #000;
-                box-shadow: 0px 0px 20px 4px #000;
                 -webkit-transition: -webkit-transform .5s ease-out;
                 -moz-transition: -moz-transform .5s ease-out;
                 transition: transform .5s ease-out;
