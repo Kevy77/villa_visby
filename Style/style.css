@@ -139,7 +139,7 @@ ul p{
 .menu__nav{
   background: rgba(0, 0, 0, 0.6);
   position: fixed;
-  height: auto;
+  height: 100%;
   width: 100%;
   top: 60px;
   border-top: 1px #000000 solid;
@@ -148,7 +148,7 @@ ul p{
   margin-left: auto;
 }
 .menu__nav li{
-  display: inline-block;
+  list-style: none;
   margin-top: 20px;
   margin-bottom: 20px;
   margin-right: 25px;
@@ -738,7 +738,7 @@ section > div {
 }
 /**************FORMULAIRE CONTACT*************/
 
-.under-form input[type=text], input[type=mail] {
+.under-form input[type=text], input[type=email] {
   border: none;
   color: #464646;
   width: 60%;
@@ -755,7 +755,7 @@ section > div {
   margin: 10px 0px;
   outline: none;
 }
-input[type=button]{
+input[type=submit]{
   border-radius: 50%;
   background-color: rgba(181, 148, 129, 1);
   width: 100px;
@@ -764,6 +764,8 @@ input[type=button]{
   top: -74px;
   position: relative;
   outline: none;
+  margin-bottom: 31px;
+
 }
 
 ::-webkit-input-placeholder {
@@ -792,7 +794,9 @@ textarea-placeholder{
   width: 100%;
   padding: 100px;
 }
-
+textarea{
+  resize: none;
+}
 
 /********* PANORAMA *****************/
 .panorama-viewport {
@@ -1123,6 +1127,16 @@ footer{
 .fb-like{
   position: absolute;
   color: white;
+}
+#msg_all{
+  position: absolute;
+top: 256px;
+right: 50%;
+transform: translateX(50%);
+color: red;
+}
+#msg_all p{
+color: green !important;
 }
 
 .copyright{

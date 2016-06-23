@@ -8,6 +8,15 @@ var totaltaille = (fourtaille + onetaille + twotaille - 100 +'px');
  $("#slideContainer").css('width',totaltaille);
  width = $(window).width();
  $(".one").css({'width': width});
+ $('a[href^="#"]').click(function(){
+ 	var the_id = $(this).attr("href");
+
+ 	$('html, body').animate({
+ 		scrollTop:$(the_id).offset().top
+ 	}, 'slow');
+ 	return false;
+ });
+
 });
 
 /************ HORIZONTAL *****************/
@@ -60,19 +69,6 @@ $(window).scroll(function() {
   else{
     $("#camion").attr("src", "Images/camion.png");
     console.log("En train de reculer");
-  }
-  if((res[res.length-2]>res[res.length-1]) & ( scolling > 2500)){
-    if (scolling < 3500) {
-      var beep = new Audio ();
-      beep.src = "sounds/beep.wav"
-      beep.play();
-    }
-    else {
-
-    }
-  }
-  else{
-
   }
 });
 /**************** Products ***************/
@@ -135,7 +131,6 @@ $(window).scroll(function(){
 $(document).ready(function(){
   $('#villa').fadeIn(2000);
 });
-
 $(document).ready(function(){
   $('#tables').hide();
   $('#fauteuil').hide();
@@ -144,7 +139,7 @@ $(document).ready(function(){
   $('#deco').hide();
   $('#villa2').fadeIn(2100);
   $(".hamburger").on("click",function(){
-    $(".menu").slideToggle();
+    $(".menu").fadeToggle(600);
     $(".hamburger").toggleClass("is-active");
   });
     $("#content-2").hide();

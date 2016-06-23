@@ -10,11 +10,9 @@ body {
 }
 @font-face {
     font-family: 'Museo';
-    src: url('../fonts/ufonts.com_museo-700-opentype_2-webfont.woff2') format('woff2'),
-         url('../fonts/ufonts.com_museo-700-opentype_2-webfont.woff') format('woff');
+    src: url('../fonts/ufonts.com_museo-700-opentype_2-webfont.woff2') format('woff2'), url('../fonts/ufonts.com_museo-700-opentype_2-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
 .panel {
     border: 0px;
@@ -186,8 +184,13 @@ ul p {
 .scroll_box {
     position: absolute;
     bottom: 30px;
-    transform: translateX(50%);
     right: 50%;
+    -ms-transform: translateX(50%);
+    -webkit-transform: translateX(50%);
+    -moz-transform: translateX(50%);
+    -o-transform: translateX(50%);
+    transform: translateX(50%);
+
 }
 .scroll__text {
     text-align: center;
@@ -250,7 +253,7 @@ hr {
     font-family: 'Arial', sans-serif;
     font-size: 16px;
     color: white;
-    position: absolute;
+    text-align: center;
 }
 .btn__click {
     text-decoration: none;
@@ -327,7 +330,11 @@ a:hover, a:visited {
     margin-top: 20px;
     position: relative;
     left: 50%;
-    transform: translateX(-50%)
+    -ms-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
 }
 .line-minus {
     margin-top: 30px;
@@ -609,13 +616,13 @@ button {
 .green {
     margin-bottom: 200px;
 }
-#content-1 > section {
+#content-1> section {
     overflow: hidden;
     margin: 20px 0;
 }
-#content-2 > section {
-      text-align: center;
-      overflow: hidden;
+#content-2> section {
+    text-align: center;
+    overflow: hidden;
 }
 
 /*************** VERTICAL ***********************/
@@ -780,9 +787,15 @@ textarea-placeholder {
 .flecheScroll {
     font-size: 60px;
     color: rgba(255, 255, 255, 0.7);
-    transform: rotate(-90deg);
     text-align: center;
+    -moz-animation: arrowOpacity 1s infinite;
+    -o-animation: arrowOpacity 1s infinite;
     animation: arrowOpacity 1s infinite;
+    -ms-transform: rotate(-90deg) translateZ(0);
+    -webkit-transform: rotate(-90deg) translateZ(0);
+    -moz-transform: rotate(-90deg) translateZ(0);
+    -o-transform: rotate(-90deg) translateZ(0);
+    transform: rotate(-90deg) translateZ(0);
 }
 @keyframes arrowOpacity {
     from {
@@ -796,6 +809,43 @@ textarea-placeholder {
         font-size: 60px;
     }
 }
+@-webkit-keyframes arrowOpacity {
+    from {
+        color: rgba(255, 255, 255, 0.6);
+        padding-right: 0;
+        font-size: 80px;
+    }
+    to {
+        color: rgba(255, 255, 255, 0);
+        padding-right: 50px;
+        font-size: 60px;
+    }
+}
+@-moz-keyframes arrowOpacity {
+    from {
+        color: rgba(255, 255, 255, 0.6);
+        padding-right: 0;
+        font-size: 80px;
+    }
+    to {
+        color: rgba(255, 255, 255, 0);
+        padding-right: 50px;
+        font-size: 60px;
+    }
+}
+@-o-keyframes arrowOpacity {
+    from {
+        color: rgba(255, 255, 255, 0.6);
+        padding-right: 0;
+        font-size: 80px;
+    }
+    to {
+        color: rgba(255, 255, 255, 0);
+        padding-right: 50px;
+        font-size: 60px;
+    }
+}
+
 
 /************** FADE IN ****************/
 #villa {
@@ -827,16 +877,20 @@ textarea-placeholder {
 }
 
 /****************** MASONRY *******************/
-.nav_filter ul li{
+.nav_filter ul li {
     list-style: none;
+    margin-right: -50px;
+    -ms-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
     transform: translateX(-50%);
-    margin-right:-50px
 }
-.nav_1{
-  float: left;
+.nav_1 {
+    float: left;
 }
-.nav_2{
-  float: right;
+.nav_2 {
+    float: right;
 }
 
 /********** CONTAINER INCLINÉ **********/
@@ -914,7 +968,7 @@ footer {
     background-image: url(../images/backgroundfooter.png);
     padding: 20px 20px 0 20px;
     position: relative;
-    overflow:hidden;
+    overflow: hidden;
 }
 .menuFooter {
     border-right: 1px solid rgba(182, 148, 127, 0.3);
@@ -926,8 +980,8 @@ footer {
     font-family: 'Arial';
     padding: 1px 0;
 }
-#situa iframe{
-  pointer-events: none;
+#situa iframe {
+    pointer-events: none;
 }
 .trait {
     width: 1px;
