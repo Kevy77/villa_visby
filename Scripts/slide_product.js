@@ -5,11 +5,15 @@ $(document).ready(function(){
   $('#buffet').hide();
   $('#deco').hide();
   $('#villa2').fadeIn(2100);
-  $(".hamburger").on("click",function(){
-    $(".menu").fadeToggle();
-    $(".hamburger").toggleClass("is-active");
-  });
     $("#content-2").hide();
+    $(".hamburger").on("click",function(){
+      $(".menu").fadeIn(600);
+      $(".hamburger").addClass("is-active");
+    });
+    $(".hamburger.is-active").on("click",function(){
+      $(".menu").fadeOut(600);
+      $(".hamburger").removeClass("is-active");
+    });
   $(document).ready(function(){
     });
     $('.btn__click').click(function(e){
@@ -154,4 +158,5 @@ $(document).ready(function(){
         $('#buffet').slideUp(300);
         $('#deco').slideDown(300);
     });
+
 });

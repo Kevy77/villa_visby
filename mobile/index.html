@@ -70,7 +70,7 @@
                             <p class="expert">
                                 <span class="title_expert">
                                   QUALITÉ<br>
-                              </span> Des produits de qualité sélectionnés pour nos clients
+                              </span> Des produits de qualité sélectionnés pour nos clients pour une réelle durée dans le temps.
                             </p>
 
                         </div>
@@ -81,7 +81,7 @@
                             <p class="expert">
                                 <span class="title_expert">
                                   PERSONNALISATION<br>
-                              </span> Des produits de qualité sélectionnés pour nos clients
+                              </span> Conseil en design intèrieur pour accorder au mieux nos meubles et votre habitat.
                             </p>
                         </div>
                         <div class="col-md-4">
@@ -91,7 +91,7 @@
                             <p class="expert">
                                 <span class="title_expert">
                                   FIABILITÉ<br>
-                              </span> Depuis 15 ans, Villa Visby est présent pour ses clients.
+                              </span> Depuis 15 ans, Villa Visby fait tout pour satisfaire un maximum sa clientèle.
                             </p>
                         </div>
                     </div>
@@ -214,27 +214,57 @@
             <div id="gal1">
                 <div class="col-md-12">
                     <h1 class="design__3">GALERIE PHOTOS</h1></div>
-                <img src="Images/galery1.jpg" data-fullsrc="Images/galery1.jpg" alt="galery1">
-                <img src="Images/galery2.jpg" data-fullsrc="Images/galery2.jpg" alt="galery2">
-                <img src="Images/galery3.jpg" data-fullsrc="Images/galery3.jpg" alt="galery3">
-                <img src="Images/galery4.jpg" data-fullsrc="Images/galery4.jpg" alt="galery4">
-                <img src="Images/galery5.jpg" data-fullsrc="Images/galery5.jpg" alt="galery5">
-                <img src="Images/galery6.jpg" data-fullsrc="Images/galery6.jpg" alt="galery6">
-                <img src="Images/galery7.jpg" data-fullsrc="Images/galery7.jpg" alt="galery7">
-                <img src="Images/galery8.jpg" data-fullsrc="Images/galery8.jpg" alt="galery8">
-                <img src="Images/galery9.jpg" data-fullsrc="Images/galery9.jpg" alt="galery9">
-                <img src="Images/galery10.jpg" data-fullsrc="Images/galery10.jpg" alt="galery10">
-                <img src="Images/galery11.jpg" data-fullsrc="Images/galery11.jpg" alt="galery11">
-                <img src="Images/galery12.jpg" data-fullsrc="Images/galery12.jpg" alt="galery12">
+                <img src="Images/galery1.jpg" data-fullsrc="" alt="Cuisine">
+                <img src="Images/galery2.jpg" data-fullsrc="Images/galery2.jpg" alt="Tabouret">
+                <img src="Images/galery3.jpg" data-fullsrc="Images/galery3.jpg" alt="Chaîses design">
+                <img src="Images/galery4.jpg" data-fullsrc="Images/galery4.jpg" alt="Bureau">
+                <img src="Images/galery5.jpg" data-fullsrc="Images/galery5.jpg" alt="Tables extérieur">
+                <img src="Images/galery6.jpg" data-fullsrc="Images/galery6.jpg" alt="Tables intérieur">
+                <img src="Images/galery7.jpg" data-fullsrc="Images/galery7.jpg" alt="Salon">
+                <img src="Images/galery8.jpg" data-fullsrc="Images/galery8.jpg" alt="Buffet">
+                <img src="Images/galery9.jpg" data-fullsrc="Images/galery9.jpg" alt="Salon">
+                <img src="Images/galery10.jpg" data-fullsrc="Images/galery10.jpg" alt="Cuisine">
+                <img src="Images/galery11.jpg" data-fullsrc="Images/galery11.jpg" alt="Table intérieur">
+                <img src="Images/galery12.jpg" data-fullsrc="Images/galery12.jpg" alt="Salon de jardin">
             </div>
         </section>
         <section id="situa">
             <div class="container-fluid no-padding">
                 <h1 class="design__3" style="margin-bottom:25px;"> NOUS SITUER</h1>
-                <img class="store" src="images/store.png" alt="">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10489.195634656093!2d2.1598797!3d48.9096971!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa247e46a8d007685!2sVilla+Visby!5e0!3m2!1sfr!2sfr!4v1465749843212" width="100%" height="400px" frameborder="0"
-                    style="border:0" allowfullscreen></iframe>
+                <img class="store" src="images/fa%C3%A7ade.JPG" alt="façade">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10489.195634656093!2d2.1598797!3d48.9096971!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa247e46a8d007685!2sVilla+Visby!5e0!3m2!1sfr!2sfr!4v1465749843212" width="100%" height="400px" frameborder="0" style="border:0" allowfullscreen></iframe>
             </div>
+        </section>
+        <section id="contact">
+          <div class="contact">
+              <div class="under-form">
+                  <h1 id="contact" class="design__9">NOUS CONTACTER</h1>
+                  <div id="form_contact">
+                      <form action="process.php" id="contact" method="POST">
+                          <p>
+                              <br />
+                              <input id="nom" name="nom" type="text" placeholder="NOM"><br>
+                              <span id="msg_nom"></span>
+                          </p>
+                          <p>
+                              <br />
+                              <input id="email" name="email" type="email" placeholder="E-MAIL"><br>
+                              <span id="msg_email"></span>
+                          </p>
+                          <p>
+                              <br />
+                              <textarea id="message" name="message" rows="10" cols="80" placeholder="MESSAGE"></textarea><br>
+                              <span id="msg_message"></span>
+                          </p>
+                          <p>
+                              <input type="submit" class="button" value="Envoyer" />
+                          </p>
+                      </form>
+                      <span id="msg_all"></span>
+                  </div>
+                  <!-- end of #form_contact -->
+              </div>
+          </div>
         </section>
         <footer>
             <div class="container">
@@ -243,13 +273,13 @@
                         <img src="Images/logofooter.png" alt="Villa Visby">
                     </div>
                     <ul class="col-md-3 menuFooter">
-                        <li>ACCUEIL</li>
-                        <li>NOTRE EXPERTISE</li>
-                        <li>NOS PRODUITS</li>
-                        <li>NOTRE SERVICE DE LIVRAISON</li>
-                        <li>GALERIE PHOTOS</li>
-                        <li>NOUS SITUER</li>
-                        <li>NOUS CONTACTER</li>
+                        <li><a href="#villa">Accueil</a></li>
+                    <li><a href="#expert">Notre design</a></li>
+                    <li><a href="#product">Nos produits</a></li>
+                    <li><a href="#delivery">Service de livraison</a></li>
+                    <li><a href="#gal1">Galerie Photos</a></li>
+                    <li><a href="#situa">Nous situer</a></li>
+                    <li><a href="#contact">Contactez-nous</a></li>
                         <li><a href="mentions.html" style="color:white;" target="_blank">MENTIONS LÉGALES</a></li>
                     </ul>
                     <ul class="col-md-3 menuFooter">
@@ -265,8 +295,7 @@
                         <li></li>
                     </ul>
                     <ul class="col-md-3 menuFooter" style="border-right:none">
-                        <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fvillavisby%2F%3Ffref%3Dts&width=450&layout=standard&action=like&show_faces=true&share=true&height=80&appId" width="450" height="80" style="border:none;overflow:hidden"
-                            scrolling="no" frameborder="0" allowTransparency="true" style="margin-left:20px;"></iframe>
+                        <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fvillavisby%2F%3Ffref%3Dts&width=450&layout=standard&action=like&show_faces=true&share=true&height=80&appId" width="450" height="80" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" style="margin-left:20px;"></iframe>
                     </ul>
                     <div class="col-md-12 row copyright">
                         © copyright 2016 Villa Visby - Tous droits réservéss
@@ -610,7 +639,7 @@
                                             Description: <span style="text-transform:lowercase">Au design contemporain et fonctionnel, vous succombrez à ses lignes épurées et de sa facilité d'entretien.</span>
                                         </p>
                                         <p class="coloris_product__c">
-                                          Coloris: Nombreuses colories disponibles
+                                            Coloris: Nombreuses colories disponibles
                                         </p>
                                     </div>
                                 </div>
@@ -630,7 +659,7 @@
                                         <p class="coloris_product__c">
                                             Coloris: Nombreuses colories disponibles
                                         </p>
-                                      </div>
+                                    </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="product_hov"><img class="img__result" src="images/table_panay.jpg" alt="panay"></div>
@@ -648,7 +677,7 @@
                                         <p class="coloris_product__c">
                                             Coloris: Nombreuses colories disponibles
                                         </p>
-                                        </div>
+                                    </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="product_hov"><img class="img__result" src="images/table_majorca.jpg" alt="majorca"></div>
@@ -666,7 +695,7 @@
                                         <p class="coloris_product__c">
                                             Coloris: Nombreuses colories disponibles
                                         </p>
-                                      </div>
+                                    </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="product_hov"><img class="img__result" src="images/table_web.jpg" alt="majorca"></div>
@@ -684,7 +713,7 @@
                                         <p class="coloris_product__c">
                                             Coloris: Nombreuses colories disponibles
                                         </p>
-                                        </div>
+                                    </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="product_hov"><img class="img__result" src="images/table_report.jpg" alt="majorca"></div>
@@ -718,9 +747,9 @@
                                             Description: <span style="text-transform:lowercase">Ce meuble unique aux finitions soignées et traditionnelles conserve son caractère unique de travail artisanal.</span>
                                         </p>
                                         <p class="coloris_product__c">
-                                          Coloris: Nombreuses colories disponibles
+                                            Coloris: Nombreuses colories disponibles
                                         </p>
-                                      </div>
+                                    </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="product_hov"><img class="img__result" src="images/table_cruise.jpg" alt="cassandro"></div>
@@ -739,7 +768,7 @@
                                             Description: <span style="text-transform:lowercase">Profitez à la fois d'un superbe design et d'un confort optimal pour vos déjeuner d'étés avec une table à rallonge</span>
                                         </p>
                                         <p class="coloris_product__c">
-                                          Coloris: Nombreuses colories disponibles
+                                            Coloris: Nombreuses colories disponibles
                                         </p>
                                     </div>
                                 </div>
@@ -831,7 +860,7 @@
                                         <p class="coloris_product__c">
                                             Coloris: Nombreuses colories disponibles
                                         </p>
-                                      </div>
+                                    </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="product_hov"><img class="img__result" src="images/chaise_longue.jpg" alt="chaise_longue"></div>
@@ -847,9 +876,9 @@
                                             Description: <span style="text-transform:lowercase">Profitez des salons éxtérieurs pour invités tous vos amis dans le confort optimal cet été.</span>
                                         </p>
                                         <p class="coloris_product__c">
-                                          Coloris: Nombreuses colories disponibles
+                                            Coloris: Nombreuses colories disponibles
                                         </p>
-                                        </div>
+                                    </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="product_hov"><img class="img__result" src="images/salon_out.jpg" alt="salon_ext"></div>
@@ -870,7 +899,7 @@
                                         <p class="coloris_product__c">
                                             Coloris: Nombreuses colories disponibles
                                         </p>
-                                        </div>
+                                    </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="product_hov"><img class="img__result" src="images/buffet_quito.jpg" alt="quito"></div>
@@ -888,7 +917,7 @@
                                         <p class="coloris_product__c">
                                             Coloris: Nombreuses colories disponibles
                                         </p>
-                                      </div>
+                                    </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="product_hov"><img class="img__result" src="images/buffet_scall.jpg" alt="quito"></div>
@@ -906,7 +935,7 @@
                                         <p class="coloris_product__c">
                                             Coloris: Nombreuses colories disponibles
                                         </p>
-                                      </div>
+                                    </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="product_hov"><img class="img__result" src="images/buffet_bass.jpg" alt="quito"></div>
@@ -924,7 +953,7 @@
                                         <p class="coloris_product__c">
                                             Coloris: Nombreuses colories disponibles
                                         </p>
-                                        </div>
+                                    </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="product_hov"><img class="img__result" src="images/buffet_caracas.jpg" alt="caracas"></div>
@@ -942,7 +971,7 @@
                                         <p class="coloris_product__c">
                                             Coloris: Nombreuses colories disponibles
                                         </p>
-                                      </div>
+                                    </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="product_hov"><img class="img__result" src="images/buffet_montero.jpg" alt="montero"></div>
@@ -960,7 +989,7 @@
                                         <p class="coloris_product__c">
                                             Coloris: Nombreuses colories disponibles
                                         </p>
-                                      </div>
+                                    </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="product_hov"><img class="img__result" src="images/buffet_piura.jpg" alt="piura"></div>
@@ -978,7 +1007,7 @@
                                         <p class="coloris_product__c">
                                             Coloris: Nombreuses colories disponibles
                                         </p>
-                                      </div>
+                                    </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="product_hov"><img class="img__result" src="images/buffet_contour.jpg" alt="quito"></div>
@@ -999,7 +1028,7 @@
                                         <p class="coloris_product__c">
                                             Coloris: Nombreuses colories disponibles
                                         </p>
-                                      </div>
+                                    </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="product_hov"><img class="img__result" src="images/vase.jpg" alt="vases"></div>
@@ -1017,7 +1046,7 @@
                                         <p class="coloris_product__c">
                                             Coloris: Nombreuses colories disponibles
                                         </p>
-                                      </div>
+                                    </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="product_hov"><img class="img__result" src="images/bougies.jpg" alt="bougies"></div>
@@ -1033,9 +1062,9 @@
                                             Description: <span style="text-transform:lowercase">Harmonisez votre salon grâce à de simples décorations smart, des objets qui sauront terriblement bien s'intégrer chez vous.</span>
                                         </p>
                                         <p class="coloris_product__c">
-                                          Coloris: Nombreuses colories disponibles
+                                            Coloris: Nombreuses colories disponibles
                                         </p>
-                                      </div>
+                                    </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="product_hov"><img class="img__result" src="images/d%C3%A9co.jpg" alt="déco"></div>
@@ -1053,7 +1082,7 @@
                                         <p class="coloris_product__c">
                                             Coloris: Nombreuses colories disponibles
                                         </p>
-                                      </div>
+                                    </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="product_hov"><img class="img__result" src="images/lights.jpg" alt="lights"></div>
@@ -1071,7 +1100,7 @@
                                         <p class="coloris_product__c">
                                             Coloris: Nombreuses colories disponibles
                                         </p>
-                                      </div>
+                                    </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="product_hov"><img class="img__result" src="images/tapis.jpg" alt="tapis"></div>
@@ -1089,7 +1118,7 @@
                                         <p class="coloris_product__c">
                                             Coloris: Nombreuses colories disponibles
                                         </p>
-                                      </div>
+                                    </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="product_hov"><img class="img__result" src="images/tapis2.jpg" alt="tapis"></div>

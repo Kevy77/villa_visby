@@ -8,7 +8,16 @@ var totaltaille = (fourtaille + onetaille + twotaille - 100 +'px');
  $("#slideContainer").css('width',totaltaille);
  width = $(window).width();
  $(".one").css({'width': width});
+ $('.menu a[href^="#"]').click(function(){
+ 	var the_id = $(this).attr("href");
 
+ 	$('html, body').animate({
+ 		scrollTop:$(the_id).offset().top
+ 	}, 'slow');
+  $(".menu").fadeOut(600);
+  $(".hamburger").removeClass("is-active");
+ 	return false;
+ });
 });
 
 /************ HORIZONTAL *****************/

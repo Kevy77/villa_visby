@@ -961,12 +961,66 @@ textarea-placeholder {
     height: 100%;
     background-size: contain;
 }
+/**************FORMULAIRE CONTACT*************/
+.under-form input[type=text], input[type=mail] {
+    border: none;
+    color: #464646;
+    width: 60%;
+    height: 45px;
+    margin: 10px 0px;
+    background-color: rgba(181, 148, 129, 1);
+    outline: none;
+}
+.under-form textarea {
+    background-color: rgba(181, 148, 129, 1);
+    width: 60%;
+    color: #464646;
+    margin: 10px 0px;
+    outline: none;
+}
+input[type=button] {
+    border-radius: 50%;
+    background-color: rgba(181, 148, 129, 1);
+    width: 100px;
+    height: 100px;
+    border: 1px solid #fff;
+    top: -74px;
+    position: relative;
+    outline: none;
+}
+::-webkit-input-placeholder {
+    color: rgb(230, 203, 188);
+    padding-left: 20px;
+}
+:-moz-placeholder {
+    /* Firefox 18- */
+
+    color: rgb(230, 203, 188);
+    padding-left: 20px;
+}
+::-moz-placeholder {
+    /* Firefox 19+ */
+
+    color: rgb(230, 203, 188);
+    padding-left: 20px;
+}
+:-ms-input-placeholder {
+    color: rgb(230, 203, 188);
+    padding-left: 20px;
+}
+textarea-placeholder {
+    padding: 0 !important;
+}
+.under-form {
+    width: 100%;
+    padding: 100px;
+}
 
 /********** footer **********/
 footer {
     width: 100%;
     background-image: url(../images/backgroundfooter.png);
-    padding: 20px 20px 0 20px;
+    padding: 60px;
     position: relative;
     overflow: hidden;
 }
@@ -979,6 +1033,9 @@ footer {
     font-size: 10px;
     font-family: 'Arial';
     padding: 1px 0;
+}
+.menuFooter a{
+    color: white;
 }
 #situa iframe {
     pointer-events: none;
@@ -1010,6 +1067,61 @@ footer {
 }
 .gallery {
     height: 137%;
+}
+/**************FORMULAIRE CONTACT*************/
+.under-form input[type=text], input[type=email] {
+    border: none;
+    color: #464646;
+    width: 60%;
+    height: 45px;
+    margin: 10px 0px;
+    background-color: rgba(181, 148, 129, 1);
+    outline: none;
+}
+.under-form textarea {
+    background-color: rgba(181, 148, 129, 1);
+    width: 60%;
+    color: #464646;
+    margin: 10px 0px;
+    outline: none;
+}
+input[type=submit] {
+    border-radius: 50%;
+    background-color: rgba(181, 148, 129, 1);
+    width: 100px;
+    height: 100px;
+    border: 1px solid #fff;
+    top: -74px;
+    position: relative;
+    outline: none;
+}
+::-webkit-input-placeholder {
+    color: rgb(230, 203, 188);
+    padding-left: 20px;
+}
+:-moz-placeholder {
+    /* Firefox 18- */
+
+    color: rgb(230, 203, 188);
+    padding-left: 20px;
+}
+::-moz-placeholder {
+    /* Firefox 19+ */
+
+    color: rgb(230, 203, 188);
+    padding-left: 20px;
+}
+:-ms-input-placeholder {
+    color: rgb(230, 203, 188);
+    padding-left: 20px;
+}
+textarea-placeholder {
+    padding: 0 !important;
+}
+.under-form {
+    width: 100%;
+    padding: 100px;
+    text-align: center;
 }
 @media only screen and (max-device-width: 667px) {
     .banner__logo {
