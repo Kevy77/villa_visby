@@ -63,7 +63,7 @@ $(window).scroll(function() {
   var currentScrolling = left;
   res[res.length]= currentScrolling;
   if(res[res.length-2]>res[res.length-1]){
-    $("#camion").attr("src", "Images/camion_recul.png");
+    $("#camion").attr("src", "Images/camion.png");
     console.log("En train de d'avancer");
   }
   else{

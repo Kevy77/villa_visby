@@ -1,6 +1,10 @@
 body{
     overflow-x: hidden;
 }
+.intro{
+    text-align: center;
+    color: white;
+}
 #content-1{
   height: 100vh;
 }
@@ -1112,10 +1116,13 @@ footer{
 
 .menuFooter li{
   list-style: none;
-  color: whitesmoke;
+  color: #FFFFFF;
   font-size: 10px;
   font-family: 'Arial';
   padding: 1px 0;
+}
+.menuFooter a{
+    color: white;
 }
 .trait{
   width: 1px;
