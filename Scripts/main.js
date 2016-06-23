@@ -8,14 +8,6 @@ var totaltaille = (fourtaille + onetaille + twotaille - 100 +'px');
  $("#slideContainer").css('width',totaltaille);
  width = $(window).width();
  $(".one").css({'width': width});
- $('a[href^="#"]').click(function(){
- 	var the_id = $(this).attr("href");
-
- 	$('html, body').animate({
- 		scrollTop:$(the_id).offset().top
- 	}, 'slow');
- 	return false;
- });
 
 });
 
@@ -144,7 +136,6 @@ $(document).ready(function(){
   });
     $("#content-2").hide();
   $(document).ready(function(){
-    });
     $('.btn__click').click(function(e){
         e.preventDefault();
         $("#content-2").slideDown(600);
@@ -155,6 +146,8 @@ $(document).ready(function(){
         $("#content-2").slideUp(600);
         $("#content-1").slideDown(600);
     });
+    });
+
     $('#canapes_btn').click(function(e){
         e.preventDefault();
         $( ".design__4" ).replaceWith('<h1 class="design__4">nos canapés</h1>');
